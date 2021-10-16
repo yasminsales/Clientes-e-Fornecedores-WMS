@@ -66,10 +66,9 @@ namespace baseCF
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 30);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 24);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1685, 80);
+            this.pictureBox1.Size = new System.Drawing.Size(1264, 65);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -84,7 +83,8 @@ namespace baseCF
             this.exibirToolStripMenuItem});
             this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(1683, 28);
+            this.menu.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menu.Size = new System.Drawing.Size(1207, 24);
             this.menu.TabIndex = 1;
             this.menu.Text = "menuStrip1";
             // 
@@ -96,25 +96,25 @@ namespace baseCF
             this.preferênciasToolStripMenuItem});
             this.arquivoToolStripMenuItem.ForeColor = System.Drawing.SystemColors.GrayText;
             this.arquivoToolStripMenuItem.Name = "arquivoToolStripMenuItem";
-            this.arquivoToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
+            this.arquivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.arquivoToolStripMenuItem.Text = "Sistema";
             this.arquivoToolStripMenuItem.Click += new System.EventHandler(this.arquivoToolStripMenuItem_Click);
             // 
             // optionToolStripMenuItem
             // 
             this.optionToolStripMenuItem.Name = "optionToolStripMenuItem";
-            this.optionToolStripMenuItem.Size = new System.Drawing.Size(172, 26);
+            this.optionToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.optionToolStripMenuItem.Text = "Sair";
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(169, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(135, 6);
             // 
             // preferênciasToolStripMenuItem
             // 
             this.preferênciasToolStripMenuItem.Name = "preferênciasToolStripMenuItem";
-            this.preferênciasToolStripMenuItem.Size = new System.Drawing.Size(172, 26);
+            this.preferênciasToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.preferênciasToolStripMenuItem.Text = "Preferências";
             // 
             // editarToolStripMenuItem
@@ -124,19 +124,19 @@ namespace baseCF
             this.permissõesToolStripMenuItem});
             this.editarToolStripMenuItem.ForeColor = System.Drawing.SystemColors.GrayText;
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
-            this.editarToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.editarToolStripMenuItem.Text = "Usuário";
             // 
             // optionToolStripMenuItem1
             // 
             this.optionToolStripMenuItem1.Name = "optionToolStripMenuItem1";
-            this.optionToolStripMenuItem1.Size = new System.Drawing.Size(179, 26);
+            this.optionToolStripMenuItem1.Size = new System.Drawing.Size(143, 22);
             this.optionToolStripMenuItem1.Text = "Ver matrícula";
             // 
             // permissõesToolStripMenuItem
             // 
             this.permissõesToolStripMenuItem.Name = "permissõesToolStripMenuItem";
-            this.permissõesToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
+            this.permissõesToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.permissõesToolStripMenuItem.Text = "Permissões";
             // 
             // exibirToolStripMenuItem
@@ -145,13 +145,13 @@ namespace baseCF
             this.optionToolStripMenuItem2});
             this.exibirToolStripMenuItem.ForeColor = System.Drawing.SystemColors.GrayText;
             this.exibirToolStripMenuItem.Name = "exibirToolStripMenuItem";
-            this.exibirToolStripMenuItem.Size = new System.Drawing.Size(62, 24);
+            this.exibirToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.exibirToolStripMenuItem.Text = "Ajuda";
             // 
             // optionToolStripMenuItem2
             // 
             this.optionToolStripMenuItem2.Name = "optionToolStripMenuItem2";
-            this.optionToolStripMenuItem2.Size = new System.Drawing.Size(144, 26);
+            this.optionToolStripMenuItem2.Size = new System.Drawing.Size(115, 22);
             this.optionToolStripMenuItem2.Text = "Suporte";
             // 
             // label1
@@ -159,10 +159,9 @@ namespace baseCF
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(1439, 79);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(1079, 64);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 20);
+            this.label1.Size = new System.Drawing.Size(95, 15);
             this.label1.TabIndex = 2;
             this.label1.Text = "User: 00000000";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -172,10 +171,9 @@ namespace baseCF
             this.lblDataHora.AutoSize = true;
             this.lblDataHora.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.lblDataHora.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDataHora.Location = new System.Drawing.Point(570, 63);
-            this.lblDataHora.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDataHora.Location = new System.Drawing.Point(428, 51);
             this.lblDataHora.Name = "lblDataHora";
-            this.lblDataHora.Size = new System.Drawing.Size(173, 28);
+            this.lblDataHora.Size = new System.Drawing.Size(140, 21);
             this.lblDataHora.TabIndex = 3;
             this.lblDataHora.Text = "19/05/2021, 00:00";
             // 
@@ -184,10 +182,9 @@ namespace baseCF
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semilight", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(1427, 46);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(1070, 37);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(134, 32);
+            this.label4.Size = new System.Drawing.Size(106, 25);
             this.label4.TabIndex = 6;
             this.label4.Text = "FAWS WMS";
             // 
@@ -197,10 +194,9 @@ namespace baseCF
             this.label5.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label5.Location = new System.Drawing.Point(568, 46);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(426, 37);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(177, 20);
+            this.label5.Size = new System.Drawing.Size(142, 15);
             this.label5.TabIndex = 7;
             this.label5.Text = "FATEC Warehouse System";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -214,10 +210,9 @@ namespace baseCF
             this.btnSalvar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnSalvar.Image = ((System.Drawing.Image)(resources.GetObject("btnSalvar.Image")));
             this.btnSalvar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalvar.Location = new System.Drawing.Point(1333, 395);
-            this.btnSalvar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSalvar.Location = new System.Drawing.Point(1015, 209);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(143, 47);
+            this.btnSalvar.Size = new System.Drawing.Size(107, 38);
             this.btnSalvar.TabIndex = 19;
             this.btnSalvar.Text = "        Salvar";
             this.btnSalvar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -233,10 +228,9 @@ namespace baseCF
             this.button8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
             this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.Location = new System.Drawing.Point(1333, 449);
-            this.button8.Margin = new System.Windows.Forms.Padding(4);
+            this.button8.Location = new System.Drawing.Point(1015, 253);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(143, 47);
+            this.button8.Size = new System.Drawing.Size(107, 38);
             this.button8.TabIndex = 19;
             this.button8.Text = "        Desfazer";
             this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -251,11 +245,9 @@ namespace baseCF
             this.groupBox4.Controls.Add(this.label16);
             this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(103, 321);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox4.Location = new System.Drawing.Point(92, 149);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox4.Size = new System.Drawing.Size(1209, 194);
+            this.groupBox4.Size = new System.Drawing.Size(907, 158);
             this.groupBox4.TabIndex = 16;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Opções do Status do Cadastro";
@@ -264,10 +256,9 @@ namespace baseCF
             // Status
             // 
             this.Status.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Status.Location = new System.Drawing.Point(181, 74);
-            this.Status.Margin = new System.Windows.Forms.Padding(4);
+            this.Status.Location = new System.Drawing.Point(136, 60);
             this.Status.Name = "Status";
-            this.Status.Size = new System.Drawing.Size(287, 27);
+            this.Status.Size = new System.Drawing.Size(216, 23);
             this.Status.TabIndex = 10;
             this.Status.TextChanged += new System.EventHandler(this.Status_TextChanged);
             // 
@@ -275,10 +266,9 @@ namespace baseCF
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(177, 48);
-            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Location = new System.Drawing.Point(133, 39);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(129, 19);
+            this.label14.Size = new System.Drawing.Size(106, 13);
             this.label14.TabIndex = 9;
             this.label14.Text = "Status de Cadastro:";
             // 
@@ -288,11 +278,10 @@ namespace baseCF
             this.codigo.Enabled = false;
             this.codigo.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.codigo.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.codigo.Location = new System.Drawing.Point(41, 54);
-            this.codigo.Margin = new System.Windows.Forms.Padding(4);
+            this.codigo.Location = new System.Drawing.Point(31, 44);
             this.codigo.Name = "codigo";
             this.codigo.ReadOnly = true;
-            this.codigo.Size = new System.Drawing.Size(113, 52);
+            this.codigo.Size = new System.Drawing.Size(86, 43);
             this.codigo.TabIndex = 3;
             this.codigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -300,10 +289,9 @@ namespace baseCF
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(38, 35);
-            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label16.Location = new System.Drawing.Point(28, 28);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(57, 19);
+            this.label16.Size = new System.Drawing.Size(48, 13);
             this.label16.TabIndex = 0;
             this.label16.Text = "Código:";
             this.label16.Click += new System.EventHandler(this.label16_Click);
@@ -321,10 +309,9 @@ namespace baseCF
             this.btnAlterar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnAlterar.Image = ((System.Drawing.Image)(resources.GetObject("btnAlterar.Image")));
             this.btnAlterar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAlterar.Location = new System.Drawing.Point(1333, 341);
-            this.btnAlterar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAlterar.Location = new System.Drawing.Point(1015, 165);
             this.btnAlterar.Name = "btnAlterar";
-            this.btnAlterar.Size = new System.Drawing.Size(143, 47);
+            this.btnAlterar.Size = new System.Drawing.Size(107, 38);
             this.btnAlterar.TabIndex = 20;
             this.btnAlterar.Text = "        Salvar edição";
             this.btnAlterar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -336,10 +323,9 @@ namespace baseCF
             // 
             this.pictureBox3.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(94, 34);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox3.Location = new System.Drawing.Point(70, 28);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(195, 65);
+            this.pictureBox3.Size = new System.Drawing.Size(146, 53);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 21;
             this.pictureBox3.TabStop = false;
@@ -348,21 +334,19 @@ namespace baseCF
             // 
             this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(1320, 311);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox3.Location = new System.Drawing.Point(1005, 141);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox3.Size = new System.Drawing.Size(179, 216);
+            this.groupBox3.Size = new System.Drawing.Size(134, 166);
             this.groupBox3.TabIndex = 22;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Controles";
             // 
             // FormStatusCadastroInserir
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1683, 828);
+            this.ClientSize = new System.Drawing.Size(1207, 381);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.btnAlterar);
             this.Controls.Add(this.button8);
@@ -376,10 +360,10 @@ namespace baseCF
             this.Controls.Add(this.menu);
             this.Controls.Add(this.groupBox3);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.MaximumSize = new System.Drawing.Size(1701, 875);
-            this.MinimumSize = new System.Drawing.Size(1701, 875);
+            this.MaximumSize = new System.Drawing.Size(1280, 718);
+            this.MinimumSize = new System.Drawing.Size(580, 420);
             this.Name = "FormStatusCadastroInserir";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FAWS WMS Cadastrar Status de Cadastro";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menu.ResumeLayout(false);

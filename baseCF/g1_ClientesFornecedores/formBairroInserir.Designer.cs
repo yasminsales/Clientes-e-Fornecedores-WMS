@@ -73,10 +73,9 @@ namespace baseCF
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 30);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 24);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1685, 80);
+            this.pictureBox1.Size = new System.Drawing.Size(1264, 65);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -91,7 +90,8 @@ namespace baseCF
             this.exibirToolStripMenuItem});
             this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(1683, 28);
+            this.menu.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menu.Size = new System.Drawing.Size(1006, 24);
             this.menu.TabIndex = 1;
             this.menu.Text = "menuStrip1";
             // 
@@ -103,25 +103,25 @@ namespace baseCF
             this.preferênciasToolStripMenuItem});
             this.arquivoToolStripMenuItem.ForeColor = System.Drawing.SystemColors.GrayText;
             this.arquivoToolStripMenuItem.Name = "arquivoToolStripMenuItem";
-            this.arquivoToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
+            this.arquivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.arquivoToolStripMenuItem.Text = "Sistema";
             this.arquivoToolStripMenuItem.Click += new System.EventHandler(this.arquivoToolStripMenuItem_Click);
             // 
             // optionToolStripMenuItem
             // 
             this.optionToolStripMenuItem.Name = "optionToolStripMenuItem";
-            this.optionToolStripMenuItem.Size = new System.Drawing.Size(172, 26);
+            this.optionToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.optionToolStripMenuItem.Text = "Sair";
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(169, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(135, 6);
             // 
             // preferênciasToolStripMenuItem
             // 
             this.preferênciasToolStripMenuItem.Name = "preferênciasToolStripMenuItem";
-            this.preferênciasToolStripMenuItem.Size = new System.Drawing.Size(172, 26);
+            this.preferênciasToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.preferênciasToolStripMenuItem.Text = "Preferências";
             // 
             // editarToolStripMenuItem
@@ -131,19 +131,19 @@ namespace baseCF
             this.permissõesToolStripMenuItem});
             this.editarToolStripMenuItem.ForeColor = System.Drawing.SystemColors.GrayText;
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
-            this.editarToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.editarToolStripMenuItem.Text = "Usuário";
             // 
             // optionToolStripMenuItem1
             // 
             this.optionToolStripMenuItem1.Name = "optionToolStripMenuItem1";
-            this.optionToolStripMenuItem1.Size = new System.Drawing.Size(179, 26);
+            this.optionToolStripMenuItem1.Size = new System.Drawing.Size(143, 22);
             this.optionToolStripMenuItem1.Text = "Ver matrícula";
             // 
             // permissõesToolStripMenuItem
             // 
             this.permissõesToolStripMenuItem.Name = "permissõesToolStripMenuItem";
-            this.permissõesToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
+            this.permissõesToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.permissõesToolStripMenuItem.Text = "Permissões";
             // 
             // exibirToolStripMenuItem
@@ -152,13 +152,13 @@ namespace baseCF
             this.optionToolStripMenuItem2});
             this.exibirToolStripMenuItem.ForeColor = System.Drawing.SystemColors.GrayText;
             this.exibirToolStripMenuItem.Name = "exibirToolStripMenuItem";
-            this.exibirToolStripMenuItem.Size = new System.Drawing.Size(62, 24);
+            this.exibirToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.exibirToolStripMenuItem.Text = "Ajuda";
             // 
             // optionToolStripMenuItem2
             // 
             this.optionToolStripMenuItem2.Name = "optionToolStripMenuItem2";
-            this.optionToolStripMenuItem2.Size = new System.Drawing.Size(144, 26);
+            this.optionToolStripMenuItem2.Size = new System.Drawing.Size(115, 22);
             this.optionToolStripMenuItem2.Text = "Suporte";
             // 
             // label1
@@ -166,10 +166,9 @@ namespace baseCF
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(1439, 79);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(1079, 64);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 20);
+            this.label1.Size = new System.Drawing.Size(111, 15);
             this.label1.TabIndex = 2;
             this.label1.Text = "Usuário: 00000000";
             // 
@@ -178,10 +177,9 @@ namespace baseCF
             this.lblDataHora.AutoSize = true;
             this.lblDataHora.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.lblDataHora.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDataHora.Location = new System.Drawing.Point(582, 69);
-            this.lblDataHora.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDataHora.Location = new System.Drawing.Point(436, 56);
             this.lblDataHora.Name = "lblDataHora";
-            this.lblDataHora.Size = new System.Drawing.Size(173, 28);
+            this.lblDataHora.Size = new System.Drawing.Size(140, 21);
             this.lblDataHora.TabIndex = 3;
             this.lblDataHora.Text = "19/05/2021, 00:00";
             // 
@@ -189,10 +187,9 @@ namespace baseCF
             // 
             this.pictureBox2.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(94, 34);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Location = new System.Drawing.Point(70, 28);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(190, 65);
+            this.pictureBox2.Size = new System.Drawing.Size(142, 53);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
@@ -202,20 +199,18 @@ namespace baseCF
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semilight", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(1448, 39);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(1086, 32);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(134, 32);
+            this.label4.Size = new System.Drawing.Size(106, 25);
             this.label4.TabIndex = 6;
             this.label4.Text = "FAWS WMS";
             // 
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.pictureBox4.Location = new System.Drawing.Point(0, 770);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox4.Location = new System.Drawing.Point(0, 626);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(1685, 73);
+            this.pictureBox4.Size = new System.Drawing.Size(1264, 59);
             this.pictureBox4.TabIndex = 12;
             this.pictureBox4.TabStop = false;
             // 
@@ -224,11 +219,10 @@ namespace baseCF
             this.txtCodigo.BackColor = System.Drawing.SystemColors.HotTrack;
             this.txtCodigo.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodigo.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.txtCodigo.Location = new System.Drawing.Point(14, 32);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCodigo.Location = new System.Drawing.Point(10, 26);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.ReadOnly = true;
-            this.txtCodigo.Size = new System.Drawing.Size(113, 52);
+            this.txtCodigo.Size = new System.Drawing.Size(86, 43);
             this.txtCodigo.TabIndex = 3;
             this.txtCodigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -236,10 +230,9 @@ namespace baseCF
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(12, 11);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(9, 9);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(57, 19);
+            this.label6.Size = new System.Drawing.Size(48, 13);
             this.label6.TabIndex = 0;
             this.label6.Text = "Código:";
             // 
@@ -252,10 +245,9 @@ namespace baseCF
             this.btnSalvar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnSalvar.Image = ((System.Drawing.Image)(resources.GetObject("btnSalvar.Image")));
             this.btnSalvar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalvar.Location = new System.Drawing.Point(12, 22);
-            this.btnSalvar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSalvar.Location = new System.Drawing.Point(9, 18);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(117, 47);
+            this.btnSalvar.Size = new System.Drawing.Size(88, 38);
             this.btnSalvar.TabIndex = 4;
             this.btnSalvar.Text = "        Salvar";
             this.btnSalvar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -267,11 +259,9 @@ namespace baseCF
             this.groupBox3.Controls.Add(this.btnSalvar);
             this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(1506, 457);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox3.Location = new System.Drawing.Point(1130, 371);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox3.Size = new System.Drawing.Size(129, 187);
+            this.groupBox3.Size = new System.Drawing.Size(97, 152);
             this.groupBox3.TabIndex = 19;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Controles";
@@ -285,10 +275,9 @@ namespace baseCF
             this.btnFechar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnFechar.Image = ((System.Drawing.Image)(resources.GetObject("btnFechar.Image")));
             this.btnFechar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFechar.Location = new System.Drawing.Point(1378, 776);
-            this.btnFechar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnFechar.Location = new System.Drawing.Point(1034, 630);
             this.btnFechar.Name = "btnFechar";
-            this.btnFechar.Size = new System.Drawing.Size(117, 47);
+            this.btnFechar.Size = new System.Drawing.Size(88, 38);
             this.btnFechar.TabIndex = 5;
             this.btnFechar.Text = "        Fechar";
             this.btnFechar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -298,10 +287,11 @@ namespace baseCF
             // tabIdenTributo2
             // 
             this.tabIdenTributo2.Controls.Add(this.tabIdentTributo);
-            this.tabIdenTributo2.Location = new System.Drawing.Point(12, 224);
+            this.tabIdenTributo2.Location = new System.Drawing.Point(9, 182);
+            this.tabIdenTributo2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabIdenTributo2.Name = "tabIdenTributo2";
             this.tabIdenTributo2.SelectedIndex = 0;
-            this.tabIdenTributo2.Size = new System.Drawing.Size(1487, 459);
+            this.tabIdenTributo2.Size = new System.Drawing.Size(1115, 373);
             this.tabIdenTributo2.TabIndex = 28;
             // 
             // tabIdentTributo
@@ -312,10 +302,11 @@ namespace baseCF
             this.tabIdentTributo.Controls.Add(this.label8);
             this.tabIdentTributo.Controls.Add(this.label6);
             this.tabIdentTributo.Controls.Add(this.txtCodigo);
-            this.tabIdentTributo.Location = new System.Drawing.Point(4, 25);
+            this.tabIdentTributo.Location = new System.Drawing.Point(4, 22);
+            this.tabIdentTributo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabIdentTributo.Name = "tabIdentTributo";
-            this.tabIdentTributo.Padding = new System.Windows.Forms.Padding(3);
-            this.tabIdentTributo.Size = new System.Drawing.Size(1479, 430);
+            this.tabIdentTributo.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabIdentTributo.Size = new System.Drawing.Size(1107, 347);
             this.tabIdentTributo.TabIndex = 0;
             this.tabIdentTributo.Text = "Identificação do Bairro";
             this.tabIdentTributo.UseVisualStyleBackColor = true;
@@ -324,28 +315,27 @@ namespace baseCF
             // 
             this.cboCidade.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCidade.FormattingEnabled = true;
-            this.cboCidade.Location = new System.Drawing.Point(28, 133);
+            this.cboCidade.Location = new System.Drawing.Point(21, 108);
+            this.cboCidade.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cboCidade.Name = "cboCidade";
-            this.cboCidade.Size = new System.Drawing.Size(121, 28);
+            this.cboCidade.Size = new System.Drawing.Size(92, 23);
             this.cboCidade.TabIndex = 31;
             // 
             // txtdescBairro
             // 
             this.txtdescBairro.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtdescBairro.Location = new System.Drawing.Point(201, 133);
-            this.txtdescBairro.Margin = new System.Windows.Forms.Padding(4);
+            this.txtdescBairro.Location = new System.Drawing.Point(151, 108);
             this.txtdescBairro.Name = "txtdescBairro";
-            this.txtdescBairro.Size = new System.Drawing.Size(496, 27);
+            this.txtdescBairro.Size = new System.Drawing.Size(373, 23);
             this.txtdescBairro.TabIndex = 1;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(196, 101);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(147, 82);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(187, 28);
+            this.label7.Size = new System.Drawing.Size(153, 21);
             this.label7.TabIndex = 30;
             this.label7.Text = "Descrição do Bairro";
             // 
@@ -353,10 +343,9 @@ namespace baseCF
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(23, 101);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(17, 82);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(151, 28);
+            this.label8.Size = new System.Drawing.Size(122, 21);
             this.label8.TabIndex = 28;
             this.label8.Text = "Sigla da Cidade";
             // 
@@ -372,10 +361,9 @@ namespace baseCF
             this.label3.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semilight", 10F);
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label3.Location = new System.Drawing.Point(568, 46);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(426, 37);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(201, 23);
+            this.label3.Size = new System.Drawing.Size(165, 19);
             this.label3.TabIndex = 29;
             this.label3.Text = "FATEC Warehouse System";
             // 
@@ -385,10 +373,10 @@ namespace baseCF
             // 
             // formBairroInserir
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1683, 828);
+            this.ClientSize = new System.Drawing.Size(1006, 609);
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.tabIdenTributo2);
@@ -401,11 +389,12 @@ namespace baseCF
             this.Controls.Add(this.menu);
             this.Controls.Add(this.pictureBox4);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.MaximumSize = new System.Drawing.Size(1701, 875);
-            this.MinimumSize = new System.Drawing.Size(1701, 875);
+            this.MaximumSize = new System.Drawing.Size(1280, 718);
+            this.MinimumSize = new System.Drawing.Size(1022, 630);
             this.Name = "formBairroInserir";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FAWS WMS - Cadastro de Tipo de Tributo";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menu.ResumeLayout(false);
             this.menu.PerformLayout();
