@@ -695,8 +695,6 @@ namespace baseCF
 
                     int teste = (Int32)cmd.ExecuteScalar();
 
-
-
                     return teste;
 
                     con.Close();
