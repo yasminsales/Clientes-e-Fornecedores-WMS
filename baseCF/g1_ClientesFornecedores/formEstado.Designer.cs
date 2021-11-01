@@ -227,7 +227,7 @@ namespace baseCF
             this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(990, 629);
+            this.button5.Location = new System.Drawing.Point(984, 638);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(88, 38);
             this.button5.TabIndex = 1;
@@ -255,7 +255,7 @@ namespace baseCF
             // mkdSiglaEstado
             // 
             this.mkdSiglaEstado.Location = new System.Drawing.Point(146, 80);
-            this.mkdSiglaEstado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mkdSiglaEstado.Margin = new System.Windows.Forms.Padding(2);
             this.mkdSiglaEstado.Mask = "LL";
             this.mkdSiglaEstado.Name = "mkdSiglaEstado";
             this.mkdSiglaEstado.Size = new System.Drawing.Size(36, 23);
@@ -435,7 +435,7 @@ namespace baseCF
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1216, 591);
+            this.ClientSize = new System.Drawing.Size(1216, 679);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
