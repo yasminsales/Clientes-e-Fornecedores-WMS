@@ -288,7 +288,7 @@ namespace baseCF
             // 
             this.tabIdenTributo2.Controls.Add(this.tabIdentTributo);
             this.tabIdenTributo2.Location = new System.Drawing.Point(9, 182);
-            this.tabIdenTributo2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabIdenTributo2.Margin = new System.Windows.Forms.Padding(2);
             this.tabIdenTributo2.Name = "tabIdenTributo2";
             this.tabIdenTributo2.SelectedIndex = 0;
             this.tabIdenTributo2.Size = new System.Drawing.Size(1115, 373);
@@ -303,9 +303,9 @@ namespace baseCF
             this.tabIdentTributo.Controls.Add(this.label6);
             this.tabIdentTributo.Controls.Add(this.txtCodigo);
             this.tabIdentTributo.Location = new System.Drawing.Point(4, 22);
-            this.tabIdentTributo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabIdentTributo.Margin = new System.Windows.Forms.Padding(2);
             this.tabIdentTributo.Name = "tabIdentTributo";
-            this.tabIdentTributo.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabIdentTributo.Padding = new System.Windows.Forms.Padding(2);
             this.tabIdentTributo.Size = new System.Drawing.Size(1107, 347);
             this.tabIdentTributo.TabIndex = 0;
             this.tabIdentTributo.Text = "Identificação do Bairro";
@@ -316,7 +316,7 @@ namespace baseCF
             this.cboCidade.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCidade.FormattingEnabled = true;
             this.cboCidade.Location = new System.Drawing.Point(21, 108);
-            this.cboCidade.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboCidade.Margin = new System.Windows.Forms.Padding(2);
             this.cboCidade.Name = "cboCidade";
             this.cboCidade.Size = new System.Drawing.Size(92, 23);
             this.cboCidade.TabIndex = 31;
@@ -376,7 +376,7 @@ namespace baseCF
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1006, 609);
+            this.ClientSize = new System.Drawing.Size(1006, 679);
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.tabIdenTributo2);

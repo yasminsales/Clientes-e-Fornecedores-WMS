@@ -373,7 +373,7 @@ namespace baseCF
             this.btnNovo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnNovo.Image = ((System.Drawing.Image)(resources.GetObject("btnNovo.Image")));
             this.btnNovo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNovo.Location = new System.Drawing.Point(9, 18);
+            this.btnNovo.Location = new System.Drawing.Point(11, 26);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(88, 38);
             this.btnNovo.TabIndex = 2;
@@ -391,7 +391,7 @@ namespace baseCF
             this.btnExcluir.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluir.Image")));
             this.btnExcluir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExcluir.Location = new System.Drawing.Point(9, 106);
+            this.btnExcluir.Location = new System.Drawing.Point(11, 114);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(88, 38);
             this.btnExcluir.TabIndex = 4;
@@ -409,7 +409,7 @@ namespace baseCF
             this.btnEditar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
             this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditar.Location = new System.Drawing.Point(9, 62);
+            this.btnEditar.Location = new System.Drawing.Point(11, 70);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(88, 38);
             this.btnEditar.TabIndex = 3;
@@ -425,9 +425,9 @@ namespace baseCF
             this.groupBox3.Controls.Add(this.btnExcluir);
             this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(1093, 379);
+            this.groupBox3.Location = new System.Drawing.Point(1093, 373);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(97, 152);
+            this.groupBox3.Size = new System.Drawing.Size(107, 167);
             this.groupBox3.TabIndex = 19;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Controles";

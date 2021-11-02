@@ -214,9 +214,9 @@ namespace baseCF
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.pictureBox4.Location = new System.Drawing.Point(0, 626);
+            this.pictureBox4.Location = new System.Drawing.Point(0, 617);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(1264, 59);
+            this.pictureBox4.Size = new System.Drawing.Size(1264, 68);
             this.pictureBox4.TabIndex = 12;
             this.pictureBox4.TabStop = false;
             // 
@@ -459,7 +459,7 @@ namespace baseCF
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1222, 591);
+            this.ClientSize = new System.Drawing.Size(1222, 671);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);

@@ -265,14 +265,15 @@ namespace baseCF
                 DataTable dt = new DataTable();
                 //OleDbDataAdapter da = new OleDbDataAdapter(SQL, con);
                 //DataSet DS = new DataSet();
-
                 dt.Load(dr);
 
                 cboCidade.DataSource = (dt);
                 //cboTipoTributo.Items.Clear();
+
                 cboCidade.DisplayMember = "descCidade";
                 cboCidade.ValueMember = "idCidade";
                 cboCidade.Text = "Selecione uma cidade";
+
             }
             catch (Exception erro)
             {
@@ -288,7 +289,4 @@ namespace baseCF
             Consultar();
         }
     }
-
-        
-    
 }
