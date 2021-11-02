@@ -70,7 +70,6 @@ namespace baseCF
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.tmrDataHora = new System.Windows.Forms.Timer(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.ttpBuscar = new System.Windows.Forms.ToolTip(this.components);
@@ -93,6 +92,7 @@ namespace baseCF
             // 
             this.menu.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.menu.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menu.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.arquivoToolStripMenuItem,
@@ -100,8 +100,8 @@ namespace baseCF
             this.exibirToolStripMenuItem});
             this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Name = "menu";
-            this.menu.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menu.Size = new System.Drawing.Size(1264, 24);
+            this.menu.Padding = new System.Windows.Forms.Padding(6, 3, 0, 3);
+            this.menu.Size = new System.Drawing.Size(1887, 35);
             this.menu.TabIndex = 1;
             this.menu.Text = "menuStrip1";
             // 
@@ -113,25 +113,25 @@ namespace baseCF
             this.preferênciasToolStripMenuItem});
             this.arquivoToolStripMenuItem.ForeColor = System.Drawing.SystemColors.GrayText;
             this.arquivoToolStripMenuItem.Name = "arquivoToolStripMenuItem";
-            this.arquivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.arquivoToolStripMenuItem.Size = new System.Drawing.Size(90, 29);
             this.arquivoToolStripMenuItem.Text = "Sistema";
             this.arquivoToolStripMenuItem.Click += new System.EventHandler(this.arquivoToolStripMenuItem_Click);
             // 
             // optionToolStripMenuItem
             // 
             this.optionToolStripMenuItem.Name = "optionToolStripMenuItem";
-            this.optionToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.optionToolStripMenuItem.Size = new System.Drawing.Size(208, 34);
             this.optionToolStripMenuItem.Text = "Sair";
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(135, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(205, 6);
             // 
             // preferênciasToolStripMenuItem
             // 
             this.preferênciasToolStripMenuItem.Name = "preferênciasToolStripMenuItem";
-            this.preferênciasToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.preferênciasToolStripMenuItem.Size = new System.Drawing.Size(208, 34);
             this.preferênciasToolStripMenuItem.Text = "Preferências";
             // 
             // editarToolStripMenuItem
@@ -141,19 +141,19 @@ namespace baseCF
             this.permissõesToolStripMenuItem});
             this.editarToolStripMenuItem.ForeColor = System.Drawing.SystemColors.GrayText;
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
-            this.editarToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(88, 29);
             this.editarToolStripMenuItem.Text = "Usuário";
             // 
             // optionToolStripMenuItem1
             // 
             this.optionToolStripMenuItem1.Name = "optionToolStripMenuItem1";
-            this.optionToolStripMenuItem1.Size = new System.Drawing.Size(143, 22);
+            this.optionToolStripMenuItem1.Size = new System.Drawing.Size(216, 34);
             this.optionToolStripMenuItem1.Text = "Ver matrícula";
             // 
             // permissõesToolStripMenuItem
             // 
             this.permissõesToolStripMenuItem.Name = "permissõesToolStripMenuItem";
-            this.permissõesToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.permissõesToolStripMenuItem.Size = new System.Drawing.Size(216, 34);
             this.permissõesToolStripMenuItem.Text = "Permissões";
             // 
             // exibirToolStripMenuItem
@@ -162,13 +162,13 @@ namespace baseCF
             this.optionToolStripMenuItem2});
             this.exibirToolStripMenuItem.ForeColor = System.Drawing.SystemColors.GrayText;
             this.exibirToolStripMenuItem.Name = "exibirToolStripMenuItem";
-            this.exibirToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+            this.exibirToolStripMenuItem.Size = new System.Drawing.Size(74, 29);
             this.exibirToolStripMenuItem.Text = "Ajuda";
             // 
             // optionToolStripMenuItem2
             // 
             this.optionToolStripMenuItem2.Name = "optionToolStripMenuItem2";
-            this.optionToolStripMenuItem2.Size = new System.Drawing.Size(115, 22);
+            this.optionToolStripMenuItem2.Size = new System.Drawing.Size(177, 34);
             this.optionToolStripMenuItem2.Text = "Suporte";
             // 
             // label1
@@ -176,9 +176,10 @@ namespace baseCF
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(1079, 62);
+            this.label1.Location = new System.Drawing.Point(1618, 95);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 15);
+            this.label1.Size = new System.Drawing.Size(167, 25);
             this.label1.TabIndex = 2;
             this.label1.Text = "Usuário: 00000000";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -188,9 +189,10 @@ namespace baseCF
             this.lblDataHora.AutoSize = true;
             this.lblDataHora.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.lblDataHora.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDataHora.Location = new System.Drawing.Point(436, 56);
+            this.lblDataHora.Location = new System.Drawing.Point(654, 86);
+            this.lblDataHora.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDataHora.Name = "lblDataHora";
-            this.lblDataHora.Size = new System.Drawing.Size(140, 21);
+            this.lblDataHora.Size = new System.Drawing.Size(206, 32);
             this.lblDataHora.TabIndex = 3;
             this.lblDataHora.Text = "19/05/2021, 00:00";
             // 
@@ -200,9 +202,10 @@ namespace baseCF
             this.label3.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semilight", 10F);
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label3.Location = new System.Drawing.Point(426, 37);
+            this.label3.Location = new System.Drawing.Point(639, 57);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(165, 19);
+            this.label3.Size = new System.Drawing.Size(230, 28);
             this.label3.TabIndex = 4;
             this.label3.Text = "FATEC Warehouse System";
             // 
@@ -211,9 +214,10 @@ namespace baseCF
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semilight", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(1086, 32);
+            this.label4.Location = new System.Drawing.Point(1629, 49);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(106, 25);
+            this.label4.Size = new System.Drawing.Size(157, 38);
             this.label4.TabIndex = 6;
             this.label4.Text = "FAWS WMS";
             // 
@@ -239,9 +243,11 @@ namespace baseCF
             this.groupBox1.Controls.Add(this.picBuscarClaro);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(83, 113);
+            this.groupBox1.Location = new System.Drawing.Point(124, 174);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(995, 177);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox1.Size = new System.Drawing.Size(1492, 272);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Parâmetros Consulta Cliente";
@@ -253,10 +259,9 @@ namespace baseCF
             this.picBuscar.BackColor = System.Drawing.Color.Transparent;
             this.picBuscar.Image = ((System.Drawing.Image)(resources.GetObject("picBuscar.Image")));
             this.picBuscar.InitialImage = null;
-            this.picBuscar.Location = new System.Drawing.Point(928, 122);
-            this.picBuscar.Margin = new System.Windows.Forms.Padding(2);
+            this.picBuscar.Location = new System.Drawing.Point(1392, 188);
             this.picBuscar.Name = "picBuscar";
-            this.picBuscar.Size = new System.Drawing.Size(46, 50);
+            this.picBuscar.Size = new System.Drawing.Size(69, 77);
             this.picBuscar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBuscar.TabIndex = 26;
             this.picBuscar.TabStop = false;
@@ -267,38 +272,36 @@ namespace baseCF
             // cboCidade
             // 
             this.cboCidade.FormattingEnabled = true;
-            this.cboCidade.Location = new System.Drawing.Point(507, 129);
-            this.cboCidade.Margin = new System.Windows.Forms.Padding(2);
+            this.cboCidade.Location = new System.Drawing.Point(760, 198);
             this.cboCidade.Name = "cboCidade";
-            this.cboCidade.Size = new System.Drawing.Size(234, 23);
+            this.cboCidade.Size = new System.Drawing.Size(349, 33);
             this.cboCidade.TabIndex = 8;
             this.cboCidade.Leave += new System.EventHandler(this.cboCidade_Leave);
             this.cboCidade.MouseClick += new System.Windows.Forms.MouseEventHandler(this.cboCidade_MouseClick);
             // 
             // mskCNPJ
             // 
-            this.mskCNPJ.Location = new System.Drawing.Point(170, 129);
-            this.mskCNPJ.Margin = new System.Windows.Forms.Padding(2);
+            this.mskCNPJ.Location = new System.Drawing.Point(255, 198);
             this.mskCNPJ.Mask = "00,000,000/0000-00";
             this.mskCNPJ.Name = "mskCNPJ";
-            this.mskCNPJ.Size = new System.Drawing.Size(162, 23);
+            this.mskCNPJ.Size = new System.Drawing.Size(241, 31);
             this.mskCNPJ.TabIndex = 6;
             // 
             // mskCPF
             // 
-            this.mskCPF.Location = new System.Drawing.Point(42, 129);
-            this.mskCPF.Margin = new System.Windows.Forms.Padding(2);
+            this.mskCPF.Location = new System.Drawing.Point(63, 198);
             this.mskCPF.Mask = "000,000,000-00";
             this.mskCPF.Name = "mskCPF";
-            this.mskCPF.Size = new System.Drawing.Size(107, 23);
+            this.mskCPF.Size = new System.Drawing.Size(158, 31);
             this.mskCPF.TabIndex = 5;
             // 
             // cboStatus
             // 
             this.cboStatus.FormattingEnabled = true;
-            this.cboStatus.Location = new System.Drawing.Point(364, 129);
+            this.cboStatus.Location = new System.Drawing.Point(546, 198);
+            this.cboStatus.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cboStatus.Name = "cboStatus";
-            this.cboStatus.Size = new System.Drawing.Size(126, 23);
+            this.cboStatus.Size = new System.Drawing.Size(187, 33);
             this.cboStatus.TabIndex = 7;
             this.cboStatus.Leave += new System.EventHandler(this.cboStatus_Leave);
             this.cboStatus.MouseClick += new System.Windows.Forms.MouseEventHandler(this.cboStatus_MouseClick);
@@ -306,9 +309,10 @@ namespace baseCF
             // txtNomeFantasia
             // 
             this.txtNomeFantasia.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNomeFantasia.Location = new System.Drawing.Point(388, 68);
+            this.txtNomeFantasia.Location = new System.Drawing.Point(582, 105);
+            this.txtNomeFantasia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNomeFantasia.Name = "txtNomeFantasia";
-            this.txtNomeFantasia.Size = new System.Drawing.Size(443, 23);
+            this.txtNomeFantasia.Size = new System.Drawing.Size(662, 31);
             this.txtNomeFantasia.TabIndex = 4;
             this.txtNomeFantasia.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
@@ -316,19 +320,19 @@ namespace baseCF
             // 
             this.lblNomeFantasia.AutoSize = true;
             this.lblNomeFantasia.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomeFantasia.Location = new System.Drawing.Point(236, 65);
+            this.lblNomeFantasia.Location = new System.Drawing.Point(354, 100);
+            this.lblNomeFantasia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNomeFantasia.Name = "lblNomeFantasia";
-            this.lblNomeFantasia.Size = new System.Drawing.Size(116, 21);
+            this.lblNomeFantasia.Size = new System.Drawing.Size(177, 32);
             this.lblNomeFantasia.TabIndex = 20;
             this.lblNomeFantasia.Text = "Nome Fantasia";
             // 
             // rbtnPJ
             // 
             this.rbtnPJ.AutoSize = true;
-            this.rbtnPJ.Location = new System.Drawing.Point(128, 71);
-            this.rbtnPJ.Margin = new System.Windows.Forms.Padding(2);
+            this.rbtnPJ.Location = new System.Drawing.Point(192, 109);
             this.rbtnPJ.Name = "rbtnPJ";
-            this.rbtnPJ.Size = new System.Drawing.Size(105, 19);
+            this.rbtnPJ.Size = new System.Drawing.Size(161, 29);
             this.rbtnPJ.TabIndex = 2;
             this.rbtnPJ.TabStop = true;
             this.rbtnPJ.Text = "Pessoa Jurídica";
@@ -338,10 +342,9 @@ namespace baseCF
             // rbtnPF
             // 
             this.rbtnPF.AutoSize = true;
-            this.rbtnPF.Location = new System.Drawing.Point(128, 29);
-            this.rbtnPF.Margin = new System.Windows.Forms.Padding(2);
+            this.rbtnPF.Location = new System.Drawing.Point(192, 45);
             this.rbtnPF.Name = "rbtnPF";
-            this.rbtnPF.Size = new System.Drawing.Size(93, 19);
+            this.rbtnPF.Size = new System.Drawing.Size(142, 29);
             this.rbtnPF.TabIndex = 1;
             this.rbtnPF.TabStop = true;
             this.rbtnPF.Text = "Pessoa Física";
@@ -352,9 +355,10 @@ namespace baseCF
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(504, 110);
+            this.label13.Location = new System.Drawing.Point(756, 169);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(43, 13);
+            this.label13.Size = new System.Drawing.Size(61, 21);
             this.label13.TabIndex = 13;
             this.label13.Text = "Cidade";
             // 
@@ -362,9 +366,10 @@ namespace baseCF
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(361, 110);
+            this.label11.Location = new System.Drawing.Point(542, 169);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(87, 13);
+            this.label11.Size = new System.Drawing.Size(124, 21);
             this.label11.TabIndex = 9;
             this.label11.Text = "Status Cadastro";
             // 
@@ -372,9 +377,10 @@ namespace baseCF
             // 
             this.lblCNPJ.AutoSize = true;
             this.lblCNPJ.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCNPJ.Location = new System.Drawing.Point(167, 110);
+            this.lblCNPJ.Location = new System.Drawing.Point(250, 169);
+            this.lblCNPJ.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCNPJ.Name = "lblCNPJ";
-            this.lblCNPJ.Size = new System.Drawing.Size(31, 13);
+            this.lblCNPJ.Size = new System.Drawing.Size(46, 21);
             this.lblCNPJ.TabIndex = 7;
             this.lblCNPJ.Text = "CNPJ";
             // 
@@ -382,18 +388,20 @@ namespace baseCF
             // 
             this.lblCPF.AutoSize = true;
             this.lblCPF.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCPF.Location = new System.Drawing.Point(39, 110);
+            this.lblCPF.Location = new System.Drawing.Point(58, 169);
+            this.lblCPF.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCPF.Name = "lblCPF";
-            this.lblCPF.Size = new System.Drawing.Size(26, 13);
+            this.lblCPF.Size = new System.Drawing.Size(37, 21);
             this.lblCPF.TabIndex = 5;
             this.lblCPF.Text = "CPF";
             // 
             // txtNomeCliente
             // 
             this.txtNomeCliente.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNomeCliente.Location = new System.Drawing.Point(388, 26);
+            this.txtNomeCliente.Location = new System.Drawing.Point(582, 40);
+            this.txtNomeCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNomeCliente.Name = "txtNomeCliente";
-            this.txtNomeCliente.Size = new System.Drawing.Size(443, 23);
+            this.txtNomeCliente.Size = new System.Drawing.Size(662, 31);
             this.txtNomeCliente.TabIndex = 3;
             // 
             // textBox1
@@ -401,10 +409,11 @@ namespace baseCF
             this.textBox1.BackColor = System.Drawing.SystemColors.HotTrack;
             this.textBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.textBox1.Location = new System.Drawing.Point(38, 42);
+            this.textBox1.Location = new System.Drawing.Point(57, 65);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(86, 43);
+            this.textBox1.Size = new System.Drawing.Size(127, 61);
             this.textBox1.TabIndex = 0;
             this.textBox1.TabStop = false;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -413,9 +422,10 @@ namespace baseCF
             // 
             this.lblNomeCliente.AutoSize = true;
             this.lblNomeCliente.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomeCliente.Location = new System.Drawing.Point(236, 25);
+            this.lblNomeCliente.Location = new System.Drawing.Point(354, 38);
+            this.lblNomeCliente.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNomeCliente.Name = "lblNomeCliente";
-            this.lblNomeCliente.Size = new System.Drawing.Size(134, 21);
+            this.lblNomeCliente.Size = new System.Drawing.Size(199, 32);
             this.lblNomeCliente.TabIndex = 2;
             this.lblNomeCliente.Text = "Nome do Cliente";
             // 
@@ -423,9 +433,10 @@ namespace baseCF
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(36, 25);
+            this.label6.Location = new System.Drawing.Point(54, 38);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(48, 13);
+            this.label6.Size = new System.Drawing.Size(68, 21);
             this.label6.TabIndex = 0;
             this.label6.Text = "Código:";
             // 
@@ -434,10 +445,9 @@ namespace baseCF
             this.picBuscarClaro.BackColor = System.Drawing.Color.Transparent;
             this.picBuscarClaro.Image = ((System.Drawing.Image)(resources.GetObject("picBuscarClaro.Image")));
             this.picBuscarClaro.InitialImage = null;
-            this.picBuscarClaro.Location = new System.Drawing.Point(928, 122);
-            this.picBuscarClaro.Margin = new System.Windows.Forms.Padding(2);
+            this.picBuscarClaro.Location = new System.Drawing.Point(1392, 188);
             this.picBuscarClaro.Name = "picBuscarClaro";
-            this.picBuscarClaro.Size = new System.Drawing.Size(46, 50);
+            this.picBuscarClaro.Size = new System.Drawing.Size(69, 77);
             this.picBuscarClaro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBuscarClaro.TabIndex = 27;
             this.picBuscarClaro.TabStop = false;
@@ -448,11 +458,12 @@ namespace baseCF
             // 
             this.dgnClientes.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgnClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgnClientes.Location = new System.Drawing.Point(18, 23);
+            this.dgnClientes.Location = new System.Drawing.Point(27, 35);
+            this.dgnClientes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgnClientes.Name = "dgnClientes";
             this.dgnClientes.RowHeadersWidth = 51;
             this.dgnClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgnClientes.Size = new System.Drawing.Size(956, 212);
+            this.dgnClientes.Size = new System.Drawing.Size(1434, 326);
             this.dgnClientes.TabIndex = 16;
             this.dgnClientes.TabStop = false;
             // 
@@ -461,9 +472,11 @@ namespace baseCF
             this.groupBox2.Controls.Add(this.dgnClientes);
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(83, 297);
+            this.groupBox2.Location = new System.Drawing.Point(124, 457);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(995, 244);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox2.Size = new System.Drawing.Size(1492, 375);
             this.groupBox2.TabIndex = 16;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Resultados Consulta Cliente";
@@ -478,9 +491,10 @@ namespace baseCF
             this.btnNovo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnNovo.Image = ((System.Drawing.Image)(resources.GetObject("btnNovo.Image")));
             this.btnNovo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNovo.Location = new System.Drawing.Point(9, 18);
+            this.btnNovo.Location = new System.Drawing.Point(14, 28);
+            this.btnNovo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnNovo.Name = "btnNovo";
-            this.btnNovo.Size = new System.Drawing.Size(88, 38);
+            this.btnNovo.Size = new System.Drawing.Size(132, 58);
             this.btnNovo.TabIndex = 9;
             this.btnNovo.Text = "        Novo";
             this.btnNovo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -496,9 +510,10 @@ namespace baseCF
             this.btnExcluir.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluir.Image")));
             this.btnExcluir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExcluir.Location = new System.Drawing.Point(9, 106);
+            this.btnExcluir.Location = new System.Drawing.Point(14, 163);
+            this.btnExcluir.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(88, 38);
+            this.btnExcluir.Size = new System.Drawing.Size(132, 58);
             this.btnExcluir.TabIndex = 11;
             this.btnExcluir.Text = "        Excluir";
             this.btnExcluir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -514,9 +529,10 @@ namespace baseCF
             this.btnEditar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
             this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditar.Location = new System.Drawing.Point(9, 62);
+            this.btnEditar.Location = new System.Drawing.Point(14, 95);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(88, 38);
+            this.btnEditar.Size = new System.Drawing.Size(132, 58);
             this.btnEditar.TabIndex = 10;
             this.btnEditar.Text = "        Editar";
             this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -530,29 +546,14 @@ namespace baseCF
             this.groupBox3.Controls.Add(this.btnExcluir);
             this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(1093, 379);
+            this.groupBox3.Location = new System.Drawing.Point(1640, 583);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(97, 152);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox3.Size = new System.Drawing.Size(146, 234);
             this.groupBox3.TabIndex = 19;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Controles";
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonShadow;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(969, 629);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(88, 38);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "        Menu";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // tmrDataHora
             // 
@@ -574,9 +575,10 @@ namespace baseCF
             // 
             this.pictureBox2.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(70, 28);
+            this.pictureBox2.Location = new System.Drawing.Point(105, 43);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(142, 53);
+            this.pictureBox2.Size = new System.Drawing.Size(213, 82);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
@@ -584,28 +586,29 @@ namespace baseCF
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 24);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 37);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1264, 65);
+            this.pictureBox1.Size = new System.Drawing.Size(1896, 100);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.pictureBox4.Location = new System.Drawing.Point(-12, 617);
+            this.pictureBox4.Location = new System.Drawing.Point(-123, 958);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(1264, 59);
+            this.pictureBox4.Size = new System.Drawing.Size(1896, 91);
             this.pictureBox4.TabIndex = 12;
             this.pictureBox4.TabStop = false;
             // 
             // formCliente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1264, 679);
-            this.Controls.Add(this.button2);
+            this.ClientSize = new System.Drawing.Size(1887, 1018);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -618,8 +621,9 @@ namespace baseCF
             this.Controls.Add(this.menu);
             this.Controls.Add(this.pictureBox4);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(1280, 718);
-            this.MinimumSize = new System.Drawing.Size(1022, 630);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MaximumSize = new System.Drawing.Size(1909, 1074);
+            this.MinimumSize = new System.Drawing.Size(1522, 939);
             this.Name = "formCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FAWS WMS - Consulta de Clientes";
@@ -676,7 +680,6 @@ namespace baseCF
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox txtNomeFantasia;
         private System.Windows.Forms.Label lblNomeFantasia;
         private System.Windows.Forms.RadioButton rbtnPJ;

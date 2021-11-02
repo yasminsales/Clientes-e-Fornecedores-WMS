@@ -27,7 +27,6 @@ namespace baseCF
             OleDbConnection con = new OleDbConnection(Globals.ConnString);
             con.Open();
             OleDbCommand cmd = con.CreateCommand();
-            cmd.CommandText = "Select * from g1_tblFornecedores";
             cmd.Connection = con;
             cmd.CommandType = CommandType.Text;
             OleDbDataAdapter da = new OleDbDataAdapter(cmd);
@@ -452,10 +451,24 @@ namespace baseCF
             this.Close();
         }
 
-        private void btnMenu_Click(object sender, EventArgs e)
+        private void button6_Click(object sender, EventArgs e)
         {
-            UserI fechar = new UserI();
-            fechar.abrirFecharForm(this, formMenuCadastro.ActiveForm);
+            textBox_nomeFantasia.Focus();
+        }
+
+        private void textBox_nomeFantasia_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox_buscaFornecedor_TextChanged(object sender, EventArgs e)
+        {
+             
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -127,17 +127,6 @@ namespace baseCF
             abrirFormMenuInicial.ShowDialog();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            UserI fechar2 = new UserI();
-            fechar2.abrirFecharForm(this, Form.ActiveForm);
-
-
-
-        }
-
-
-
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
 

@@ -1,10 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\interface-wms",
-    "\\interface-wms\\interface-wms",
-    "\\interface-wms\\interface-wms\\frmInicial"
+    "\\baseCF",
+    "\\baseCF\\g1_Classes"
   ],
-  "SelectedNode": "\\interface-wms\\interface-wms.sln",
+  "SelectedNode": "\\baseCF\\g1_Classes\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

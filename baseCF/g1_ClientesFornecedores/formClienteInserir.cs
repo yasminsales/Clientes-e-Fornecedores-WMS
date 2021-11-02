@@ -695,11 +695,9 @@ namespace baseCF
 
                     int teste = (Int32)cmd.ExecuteScalar();
 
-
+                    con.Close();
 
                     return teste;
-
-                    con.Close();
 
                 }
                 catch (Exception erro)
@@ -789,6 +787,11 @@ namespace baseCF
         private void tmrDataHora_Tick(object sender, EventArgs e)
         {
             lblDataHora.Text = DateTime.Now.ToString("dd/MM/yyyy, HH:mm");
+        }
+
+        private void txtRazaoSocial_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
