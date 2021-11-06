@@ -5,16 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.OleDb;
 using System.Windows.Forms;
-
+using System.IO;
 
 namespace baseCF
 {
     public class Globals
 
     {
-      public static string pasta = Application.StartupPath + @"\BDP2-WMSV2.mdb";
-        
-      public static string ConnString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + pasta;
+        public static string pasta = $@"|DataDirectory|\BDP2-WMSV2.mdb";
+
+        public static string ConnString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + pasta;
 
     }
 

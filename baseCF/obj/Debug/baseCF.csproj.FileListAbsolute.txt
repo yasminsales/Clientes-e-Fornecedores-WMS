@@ -24,3 +24,4 @@ C:\Users\yasmin.sandri.sales\source\repos\Clientes-e-Fornecedores-WMS\baseCF\obj
 C:\Users\yasmin.sandri.sales\source\repos\Clientes-e-Fornecedores-WMS\baseCF\obj\Debug\baseCF.csproj.CoreCompileInputs.cache
 C:\Users\yasmin.sandri.sales\source\repos\Clientes-e-Fornecedores-WMS\baseCF\obj\Debug\baseCF.exe
 C:\Users\yasmin.sandri.sales\source\repos\Clientes-e-Fornecedores-WMS\baseCF\obj\Debug\baseCF.pdb
+C:\Users\yasmin.sandri.sales\source\repos\Clientes-e-Fornecedores-WMS\baseCF\obj\Debug\baseCF.csproj.AssemblyReference.cache

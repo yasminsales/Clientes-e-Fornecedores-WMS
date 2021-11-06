@@ -22,20 +22,6 @@ namespace baseCF
             InitializeComponent();
         }
 
-        private void Consultar(object sender, EventArgs e)
-        {
-            OleDbConnection con = new OleDbConnection(Globals.ConnString);
-            con.Open();
-            OleDbCommand cmd = con.CreateCommand();
-            cmd.Connection = con;
-            cmd.CommandType = CommandType.Text;
-            OleDbDataAdapter da = new OleDbDataAdapter(cmd);
-            DataTable tabelaFornecedores = new DataTable();
-            da.Fill(tabelaFornecedores);
-            dataGridView1.DataSource = tabelaFornecedores;
-            con.Close();
-        }
-
         private IEnumerable<SelectItem> ObterItensSelect(string tabela, string colunaDesc, string colunaId)
         {
             OleDbConnection con = new OleDbConnection(Globals.ConnString);
@@ -282,7 +268,7 @@ namespace baseCF
                     textBox1.Text = "000";
                 }
                 LimparCampos();
-                Consultar(null, null);
+                picBuscar_Click(null, null);
             }
             catch (Exception ex)
             {
@@ -467,6 +453,30 @@ namespace baseCF
         }
 
         private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void picBuscar_Click(object sender, EventArgs e)
+        {
+            OleDbConnection con = new OleDbConnection(Globals.ConnString);
+            con.Open();
+            OleDbCommand cmd = con.CreateCommand();
+            cmd.CommandText = $"SELECT * from g1_tblFornecedores WHERE nomeFantasia LIKE '%{textBox_nomeFantasia.Text}%' ";
+            cmd.Connection = con;
+            cmd.CommandType = CommandType.Text;
+            OleDbDataAdapter da = new OleDbDataAdapter(cmd);
+            DataTable tabelaFornecedores = new DataTable();
+            da.Fill(tabelaFornecedores);
+            if (tabelaFornecedores.Rows.Count == 0)
+            {
+                MessageBox.Show("Nenhum fornecedor encontrado.");
+            }
+            dataGridView1.DataSource = tabelaFornecedores;
+            con.Close();
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
         }

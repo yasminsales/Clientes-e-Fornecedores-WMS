@@ -364,7 +364,10 @@ namespace baseCF
 
         private void picBuscar_Click(object sender, EventArgs e)
         {
-
+            if (dgnClientes.Rows.Count == 0)
+            {
+                MessageBox.Show("Nenhum fornecedor encontrado.");
+            }
 
         }
 
