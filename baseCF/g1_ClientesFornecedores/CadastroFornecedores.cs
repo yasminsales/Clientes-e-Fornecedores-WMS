@@ -276,6 +276,25 @@ namespace baseCF
             }
         }
 
+        private void picBuscar_Click(object sender, EventArgs e)
+        {
+            OleDbConnection con = new OleDbConnection(Globals.ConnString);
+            con.Open();
+            OleDbCommand cmd = con.CreateCommand();
+            cmd.CommandText = $"SELECT * from g1_tblFornecedores WHERE nomeFantasia LIKE '%{textBox_nomeFantasia.Text}%' ";
+            cmd.Connection = con;
+            cmd.CommandType = CommandType.Text;
+            OleDbDataAdapter da = new OleDbDataAdapter(cmd);
+            DataTable tabelaFornecedores = new DataTable();
+            da.Fill(tabelaFornecedores);
+            if (tabelaFornecedores.Rows.Count == 0)
+            {
+                MessageBox.Show("Nenhum fornecedor encontrado.");
+            }
+            dataGridView1.DataSource = tabelaFornecedores;
+            con.Close();
+        }
+
         private void PreencherSelects()
         {
             comboBox_bairro.Items.AddRange(ObterItensSelect("g1_tblBairro", "descBairro", "idBairro").ToArray());
@@ -299,35 +318,35 @@ namespace baseCF
 
         private void Excluir_Click(object sender, EventArgs e)
         {
-            //var selectedCells = this.dataGridView1.SelectedCells;
-            //if (selectedCells.Count == 0)
-            //{
-            //    MessageBox.Show("Uma linha deve ser selecionada.");
-            //    return;
-            //}
+            var selectedCells = this.dataGridView1.SelectedCells;
+            if (selectedCells.Count == 0)
+            {
+                MessageBox.Show("Uma linha deve ser selecionada.");
+                return;
+            }
 
-            //OleDbConnection con = new OleDbConnection(Globals.ConnString);
-            //con.Open();
-            //OleDbCommand cmd = con.CreateCommand();
+            OleDbConnection con = new OleDbConnection(Globals.ConnString);
+            con.Open();
+            OleDbCommand cmd = con.CreateCommand();
 
-            //var selectedRowIndex = selectedCells[0].RowIndex;
-            //var rowData = this.dataGridView1.Rows[selectedRowIndex];
-            //var id = (int)rowData.Cells[0].Value;
-            //cmd.CommandText = "DELETE from g1_tblFornecedores WHERE idFornecedores = " + id;
-            //cmd.Connection = con;
-            //cmd.CommandType = CommandType.Text;
-            //int rowAffected = cmd.ExecuteNonQuery();
-            //if (rowAffected == 0)
-            //{
-            //    MessageBox.Show("Nenhuma linha encontrada.");
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Dados excluidos com sucesso");
-            //}
+            var selectedRowIndex = selectedCells[0].RowIndex;
+            var rowData = this.dataGridView1.Rows[selectedRowIndex];
+            var id = (int)rowData.Cells[0].Value;
+            cmd.CommandText = "DELETE from g1_tblFornecedores WHERE idFornecedores = " + id;
+            cmd.Connection = con;
+            cmd.CommandType = CommandType.Text;
+            int rowAffected = cmd.ExecuteNonQuery();
+            if (rowAffected == 0)
+            {
+                MessageBox.Show("Nenhuma linha encontrada.");
+            }
+            else
+            {
+                MessageBox.Show("Dados excluidos com sucesso");
+            }
 
-            //Consultar(null, null);
-            //con.Close();
+            picBuscar_Click(null, null);
+            con.Close();
         }
 
         private string TratarCampoVazio(object valor)
@@ -447,33 +466,9 @@ namespace baseCF
 
         }
 
-        private void textBox_buscaFornecedor_TextChanged(object sender, EventArgs e)
-        {
-             
-        }
-
         private void groupBox2_Enter(object sender, EventArgs e)
         {
 
-        }
-
-        private void picBuscar_Click(object sender, EventArgs e)
-        {
-            OleDbConnection con = new OleDbConnection(Globals.ConnString);
-            con.Open();
-            OleDbCommand cmd = con.CreateCommand();
-            cmd.CommandText = $"SELECT * from g1_tblFornecedores WHERE nomeFantasia LIKE '%{textBox_nomeFantasia.Text}%' ";
-            cmd.Connection = con;
-            cmd.CommandType = CommandType.Text;
-            OleDbDataAdapter da = new OleDbDataAdapter(cmd);
-            DataTable tabelaFornecedores = new DataTable();
-            da.Fill(tabelaFornecedores);
-            if (tabelaFornecedores.Rows.Count == 0)
-            {
-                MessageBox.Show("Nenhum fornecedor encontrado.");
-            }
-            dataGridView1.DataSource = tabelaFornecedores;
-            con.Close();
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
