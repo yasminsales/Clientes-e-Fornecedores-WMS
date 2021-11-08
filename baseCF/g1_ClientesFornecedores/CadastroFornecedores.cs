@@ -16,10 +16,37 @@ namespace baseCF
     public partial class CadastroFornecedores : Form
     {
         private int _idUpdate = 0;
+        Fill fill = new Fill();
 
         public CadastroFornecedores()
         {
             InitializeComponent();
+        }
+
+        private void Consultar(object sender, EventArgs e)
+        {
+            try
+            {
+                OleDbConnection con = new OleDbConnection(Globals.ConnString);
+                con.Open();
+
+                string SQL = "SELECT * FROM g1_tblFornecedores";
+
+                OleDbDataAdapter adapter = new OleDbDataAdapter(SQL, con);
+
+                DataSet DS = new DataSet();
+
+                adapter.Fill(DS, "g1_tblFornecedores");
+
+                dataGridView1.DataSource = DS.Tables["g1_tblFornecedores"];
+
+                con.Close();
+
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show(erro.Message);
+            }
         }
 
         private IEnumerable<SelectItem> ObterItensSelect(string tabela, string colunaDesc, string colunaId)
@@ -195,7 +222,7 @@ namespace baseCF
             cmd.ExecuteNonQuery();
 
             con.Close();
-            MessageBox.Show("Dados inseridos com sucesso");
+            MessageBox.Show("Dados inseridos com sucesso", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void Atualizar()
@@ -272,7 +299,7 @@ namespace baseCF
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao cadastrar, forneça mais informações e tente novamente. " + ex.Message);
+                MessageBox.Show("Erro ao cadastrar, forneça mais informações e tente novamente. " + ex.Message,"Erro",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
         }
 
@@ -321,7 +348,7 @@ namespace baseCF
             var selectedCells = this.dataGridView1.SelectedCells;
             if (selectedCells.Count == 0)
             {
-                MessageBox.Show("Uma linha deve ser selecionada.");
+                MessageBox.Show("Uma linha deve ser selecionada.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -338,14 +365,14 @@ namespace baseCF
             int rowAffected = cmd.ExecuteNonQuery();
             if (rowAffected == 0)
             {
-                MessageBox.Show("Nenhuma linha encontrada.");
+                MessageBox.Show("Uma linha deve ser selecionada.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                MessageBox.Show("Dados excluidos com sucesso");
+                MessageBox.Show("Dados excluidos com sucesso", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
-            picBuscar_Click(null, null);
+            Consultar(null, null);
             con.Close();
         }
 
@@ -445,7 +472,7 @@ namespace baseCF
             textBox1.Text = "000";
             LimparCampos();
         }
-       
+
         private void tmrDataHora_Tick(object sender, EventArgs e)
         {
             label2.Text = DateTime.Now.ToString("dd/MM/yyyy, HH:mm");
