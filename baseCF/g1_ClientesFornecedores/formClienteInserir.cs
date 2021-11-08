@@ -14,11 +14,10 @@ namespace baseCF
 {
     public partial class formClienteInserir : Form
     {
+        Fill fill = new Fill();
         public formClienteInserir()
         {
             InitializeComponent();
-           
-
         }
 
         private void arquivoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -70,169 +69,10 @@ namespace baseCF
                 rbtnPF.Enabled = false;
                 rbtnPJ.Enabled = false;
                 cboStatusCadastro.Enabled = false;
-               
-            }
 
-
-        }
-
-        public void fillCboEstado()
-
-        {
-            try
-            {
-                
-                
-                OleDbConnection con = new OleDbConnection(Globals.ConnString);
-                con.Open();
-
-                String SQL;
-                SQL = "SELECT * FROM g1_tblEstado ORDER BY g1_tblEstado.descEstado  ";
-
-
-                OleDbCommand cmd = new OleDbCommand(SQL, con);
-                cmd.Connection = con;
-
-                OleDbDataReader dr = cmd.ExecuteReader();
-
-                DataTable dt = new DataTable();
-                //OleDbDataAdapter da = new OleDbDataAdapter(SQL, con);
-                //DataSet DS = new DataSet();
-
-                dt.Load(dr);
-
-                cboEstado.DataSource = (dt);
-                //cboTipoTributo.Items.Clear();
-                cboEstado.DisplayMember = "siglaEstado";
-                cboEstado.ValueMember = "idEstado";
-
-
-            }
-            catch (Exception erro)
-            {
-                MessageBox.Show(erro.Message);
             }
         }
-
-        public void fillCboCidade()
-
-        {
-            try
-            {
-                
-                
-                OleDbConnection con = new OleDbConnection(Globals.ConnString);
-                con.Open();
-
-                String SQL;
-                SQL = "SELECT * FROM g1_tblCidade ";
-
-                SQL += "WHERE g1_tblCidade.idEstado=" + cboEstado.SelectedValue + " ";
-                SQL += "ORDER BY g1_tblCidade.descCidade  ";
-
-
-                OleDbCommand cmd = new OleDbCommand(SQL, con);
-                cmd.Connection = con;
-
-                OleDbDataReader dr = cmd.ExecuteReader();
-
-                DataTable dt = new DataTable();
-                //OleDbDataAdapter da = new OleDbDataAdapter(SQL, con);
-                //DataSet DS = new DataSet();
-
-                dt.Load(dr);
-
-                cboCidade.DataSource = (dt);
-                //cboTipoTributo.Items.Clear();
-                cboCidade.DisplayMember = "descCidade";
-                cboCidade.ValueMember = "idCidade";
-
-
-            }
-            catch (Exception erro)
-            {
-                MessageBox.Show(erro.Message);
-            }
-        }
-
-        public void fillCboBairro()
-
-        {
-            try
-            {
-                
-                
-                OleDbConnection con = new OleDbConnection(Globals.ConnString);
-                con.Open();
-
-                String SQL;
-                SQL = "SELECT * FROM g1_tblBairro ";
-
-                SQL += "WHERE g1_tblBairro.idCidade=" + cboCidade.SelectedValue + " ";
-                SQL += "ORDER BY g1_tblbairro.descBairro  ";
-
-
-                OleDbCommand cmd = new OleDbCommand(SQL, con);
-                cmd.Connection = con;
-
-                OleDbDataReader dr = cmd.ExecuteReader();
-
-                DataTable dt = new DataTable();
-                //OleDbDataAdapter da = new OleDbDataAdapter(SQL, con);
-                //DataSet DS = new DataSet();
-
-                dt.Load(dr);
-
-                cboBairro.DataSource = (dt);
-                //cboTipoTributo.Items.Clear();
-                cboBairro.DisplayMember = "descBairro";
-                cboBairro.ValueMember = "idBairro";
-
-
-            }
-            catch (Exception erro)
-            {
-                MessageBox.Show(erro.Message);
-            }
-        }
-
-        public void fillCboSegmento()
-
-        {
-            try
-            {
-                
-                
-                OleDbConnection con = new OleDbConnection(Globals.ConnString);
-                con.Open();
-
-                String SQL;
-                SQL = "SELECT * FROM g1_tblSegmento ORDER BY g1_tblSegmento.descSegmento";
-
-
-                OleDbCommand cmd = new OleDbCommand(SQL, con);
-                cmd.Connection = con;
-
-                OleDbDataReader dr = cmd.ExecuteReader();
-
-                DataTable dt = new DataTable();
-                //OleDbDataAdapter da = new OleDbDataAdapter(SQL, con);
-                //DataSet DS = new DataSet();
-
-                dt.Load(dr);
-
-                cboSegmento.DataSource = (dt);
-                //cboTipoTributo.Items.Clear();
-                cboSegmento.DisplayMember = "descSegmento";
-                cboSegmento.ValueMember = "idSegmento";
-
-
-            }
-            catch (Exception erro)
-            {
-                MessageBox.Show(erro.Message);
-            }
-        }
+      
         public void fillCboBanco()
 
         {
@@ -271,69 +111,29 @@ namespace baseCF
             }
         }
 
-        public void fillCboStatus()
-
+        private void txtRazaoSocial_TextChanged(object sender, EventArgs e)
         {
-            try
-            {
-                
-                
-                OleDbConnection con = new OleDbConnection(Globals.ConnString);
-                con.Open();
 
-                String SQL;
-                SQL = "SELECT * FROM g1_tblStatusCadastro";
-
-
-                OleDbCommand cmd = new OleDbCommand(SQL, con);
-                cmd.Connection = con;
-
-                OleDbDataReader dr = cmd.ExecuteReader();
-
-                DataTable dt = new DataTable();
-                //OleDbDataAdapter da = new OleDbDataAdapter(SQL, con);
-                //DataSet DS = new DataSet();
-
-                dt.Load(dr);
-
-                cboStatusCadastro.DataSource = (dt);
-                //cboTipoTributo.Items.Clear();
-                cboStatusCadastro.DisplayMember = "descStatusCadastro";
-                cboStatusCadastro.ValueMember = "idStatusCadastro";
-
-
-            }
-            catch (Exception erro)
-            {
-                MessageBox.Show(erro.Message);
-            }
         }
 
         private void cboEstado_MouseClick(object sender, MouseEventArgs e)
         {
-            fillCboEstado();
-        }
-
-        private void cboEstado_SelectionChangeCommitted(object sender, EventArgs e)
-        {
-            fillCboCidade();
-            fillCboBairro();
+            fill.fillEstado(cboEstado);
         }
 
         private void cboCidade_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            fillCboBairro();
-
+            fill.fillBairro(cboBairro,cboCidade);
         }
 
         private void cboBanco_MouseClick(object sender, MouseEventArgs e)
         {
-            fillCboBanco();
+            fill.fillBanco(cboBanco);
         }
 
         private void cboSegmento_MouseClick(object sender, MouseEventArgs e)
         {
-            fillCboSegmento();
+            fill.fillSegmento(cboSegmento);
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
@@ -673,10 +473,6 @@ namespace baseCF
                     String SQL;
                     SQL = "SELECT COUNT (*) FROM g1_tblClientes ";
 
-
-
-
-
                     if (rbtnPF.Checked)
                     {
                         mkdCPF.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
@@ -789,9 +585,9 @@ namespace baseCF
             lblDataHora.Text = DateTime.Now.ToString("dd/MM/yyyy, HH:mm");
         }
 
-        private void txtRazaoSocial_TextChanged(object sender, EventArgs e)
+        private void cboEstado_SelectionChangeCommitted(object sender, EventArgs e)
         {
-
+            fill.fillCidade(cboEstado, cboCidade);
         }
     }
 }

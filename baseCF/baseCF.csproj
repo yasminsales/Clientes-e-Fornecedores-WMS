@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="g1_Classes\Fill.cs" />
     <Compile Include="g1_ClientesFornecedores\CadastroFornecedores.cs">
       <SubType>Form</SubType>
     </Compile>

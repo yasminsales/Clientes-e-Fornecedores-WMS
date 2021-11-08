@@ -14,33 +14,18 @@ namespace baseCF
 {
     public partial class formCidade : Form
     {
+        Fill fill = new Fill();
         public formCidade()
         {
             InitializeComponent();
-            fillEstado();
-        }
-
-        private void arquivoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
+            fill.fillEstado(cboEstado);
+            cboEstado.SelectedIndex = -1;
         }
 
         private void btnNovo_Click(object sender, EventArgs e)
         {
             formCidadeInserir abrirForm = new formCidadeInserir();
             abrirForm.ShowDialog();
-
-
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -48,24 +33,17 @@ namespace baseCF
            //Fecha esse form e volta ao menu principal
             UserI fechar = new UserI();
             fechar.abrirFecharForm(this, formMenuCadastro.ActiveForm);
-
         }
-
-        
-
         private void tmrDataHora_Tick(object sender, EventArgs e)
         {
             lblDataHora.Text = DateTime.Now.ToString("dd/MM/yyyy, HH:mm");
         }
-
-       
         
         public void Consultar()
         {
 
             try
             {
-                
                 
                 OleDbConnection con = new OleDbConnection(Globals.ConnString);
                 con.Open();
@@ -187,20 +165,13 @@ namespace baseCF
             //{
 
 
-            //}
-
-
-            
+            //} 
         }
-
-       
 
         private void groupBox1_Move(object sender, EventArgs e)
         {
             ttlAviso.SetToolTip(this.groupBox1, "Informe os parâmetros para iniciar a pesquisa.");
         }
-
-        
 
         private void mkdSiglaEstado_KeyUp(object sender, KeyEventArgs e)
         {
@@ -209,79 +180,7 @@ namespace baseCF
 
         private void cboEstado_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            fillCidade();
-        }
-
-        void fillEstado()
-        {
-            try
-            {
-                OleDbConnection con = new OleDbConnection(Globals.ConnString);
-                con.Open();
-
-                String SQL;
-                SQL = "Select * from g1_tblEstado";
-
-                OleDbCommand cmd = new OleDbCommand(SQL, con);
-                cmd.Connection = con;
-
-                OleDbDataReader dr = cmd.ExecuteReader();
-
-                DataTable dt = new DataTable();
-                //OleDbDataAdapter da = new OleDbDataAdapter(SQL, con);
-                //DataSet DS = new DataSet();
-
-                dt.Load(dr);
-
-                cboEstado.DataSource = (dt);
-                //cboTipoTributo.Items.Clear();
-                cboEstado.DisplayMember = "siglaEstado";
-                cboEstado.ValueMember = "IdEstado";
-            }
-            catch (Exception erro)
-            {
-
-                MessageBox.Show(erro.ToString());
-            }
-            
-
-        }
-
-        void fillCidade()
-        {
-            try
-            {
-                OleDbConnection con = new OleDbConnection(Globals.ConnString);
-                con.Open();
-
-                String SQL;
-                SQL = "SELECT * FROM g1_tblCidade WHERE idEstado =" + cboEstado.SelectedValue;
-
-                OleDbCommand cmd = new OleDbCommand(SQL, con);
-                cmd.Connection = con;
-
-                OleDbDataReader dr = cmd.ExecuteReader();
-
-                DataTable dt = new DataTable();
-                //OleDbDataAdapter da = new OleDbDataAdapter(SQL, con);
-                //DataSet DS = new DataSet();
-                dt.Load(dr);
-
-                cboCidade.DataSource = (dt);
-                //cboTipoTributo.Items.Clear();
-
-                cboCidade.DisplayMember = "descCidade";
-                cboCidade.ValueMember = "idCidade";
-                cboCidade.Text = "Selecione uma cidade";
-
-            }
-            catch (Exception erro)
-            {
-
-                MessageBox.Show(erro.ToString());
-            }
-
-
+            fill.fillCidade(cboEstado,cboCidade);
         }
 
         private void cboCidade_SelectionChangeCommitted(object sender, EventArgs e)
