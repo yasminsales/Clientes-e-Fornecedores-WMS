@@ -12,7 +12,7 @@ namespace baseCF
     public class Globals
 
     {
-      public static string pasta = Application.StartupPath + @"\BDP2-WMSV2.mdb";
+      public static string pasta = @"../../../BDP2-WMSV2.mdb";
         
       public static string ConnString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + pasta;
 
