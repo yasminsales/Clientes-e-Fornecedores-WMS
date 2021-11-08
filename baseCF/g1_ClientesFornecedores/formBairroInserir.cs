@@ -18,6 +18,7 @@ namespace baseCF
         {
             InitializeComponent();
             fillCidade();
+            cboCidade.SelectedIndex = -1;
         }
 
         private void arquivoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -88,10 +89,6 @@ namespace baseCF
             else
                 FormValido = true;
             return FormValido;
-
-
-
-
         }
 
         private void btnDesfazer_Click(object sender, EventArgs e)

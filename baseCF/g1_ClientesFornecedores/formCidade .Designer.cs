@@ -99,18 +99,7 @@ namespace baseCF
             this.menu.Size = new System.Drawing.Size(1250, 24);
             this.menu.TabIndex = 1;
             this.menu.Text = "menuStrip1";
-            // 
-            // arquivoToolStripMenuItem
-            // 
-            this.arquivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.optionToolStripMenuItem,
-            this.toolStripMenuItem1,
-            this.preferênciasToolStripMenuItem});
-            this.arquivoToolStripMenuItem.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.arquivoToolStripMenuItem.Name = "arquivoToolStripMenuItem";
-            this.arquivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
-            this.arquivoToolStripMenuItem.Text = "Sistema";
-            this.arquivoToolStripMenuItem.Click += new System.EventHandler(this.arquivoToolStripMenuItem_Click);
+          
             // 
             // optionToolStripMenuItem
             // 
@@ -165,18 +154,6 @@ namespace baseCF
             this.optionToolStripMenuItem2.Name = "optionToolStripMenuItem2";
             this.optionToolStripMenuItem2.Size = new System.Drawing.Size(115, 22);
             this.optionToolStripMenuItem2.Text = "Suporte";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(1079, 65);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 15);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Usuário: 00000000";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblDataHora
             // 
@@ -362,7 +339,6 @@ namespace baseCF
             this.groupBox2.TabIndex = 16;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Resultados Consulta Cidade";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // btnNovo
             // 
