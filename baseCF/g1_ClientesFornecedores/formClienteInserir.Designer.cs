@@ -145,7 +145,7 @@ namespace baseCF
             this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Name = "menu";
             this.menu.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menu.Size = new System.Drawing.Size(1264, 24);
+            this.menu.Size = new System.Drawing.Size(1262, 24);
             this.menu.TabIndex = 1;
             this.menu.Text = "menuStrip1";
             // 
@@ -564,6 +564,7 @@ namespace baseCF
             this.txtRazaoSocial.Name = "txtRazaoSocial";
             this.txtRazaoSocial.Size = new System.Drawing.Size(373, 23);
             this.txtRazaoSocial.TabIndex = 31;
+            this.txtRazaoSocial.TextChanged += new System.EventHandler(this.txtRazaoSocial_TextChanged);
             // 
             // label7
             // 
@@ -1098,7 +1099,7 @@ namespace baseCF
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1264, 679);
+            this.ClientSize = new System.Drawing.Size(1262, 673);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.chkEditar);
             this.Controls.Add(this.label3);
@@ -1112,11 +1113,12 @@ namespace baseCF
             this.Controls.Add(this.menu);
             this.Controls.Add(this.pictureBox4);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(1280, 718);
-            this.MinimumSize = new System.Drawing.Size(1022, 630);
+            this.MaximumSize = new System.Drawing.Size(1278, 712);
+            this.MinimumSize = new System.Drawing.Size(911, 512);
             this.Name = "formClienteInserir";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "System Name - Cadastro de Clientes";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.formClienteInserir_Load);
             this.menu.ResumeLayout(false);
             this.menu.PerformLayout();

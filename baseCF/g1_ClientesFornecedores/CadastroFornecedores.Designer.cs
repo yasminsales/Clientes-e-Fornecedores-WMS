@@ -40,7 +40,6 @@ namespace baseCF
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.button4 = new System.Windows.Forms.Button();
-            this.btnMenu = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -107,13 +106,10 @@ namespace baseCF
             this.label6 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox_buscaFornecedor = new System.Windows.Forms.TextBox();
             this.button6 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
@@ -215,7 +211,7 @@ namespace baseCF
             this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(1089, 619);
+            this.button3.Location = new System.Drawing.Point(6, 186);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(97, 38);
             this.button3.TabIndex = 11;
@@ -242,32 +238,14 @@ namespace baseCF
             this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(995, 619);
+            this.button4.Location = new System.Drawing.Point(6, 22);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(88, 38);
+            this.button4.Size = new System.Drawing.Size(97, 38);
             this.button4.TabIndex = 13;
             this.button4.Text = "        Salvar";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.Salvar_Click);
-            // 
-            // btnMenu
-            // 
-            this.btnMenu.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnMenu.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMenu.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnMenu.Image")));
-            this.btnMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMenu.Location = new System.Drawing.Point(885, 619);
-            this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(88, 38);
-            this.btnMenu.TabIndex = 1;
-            this.btnMenu.Text = "        Menu";
-            this.btnMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMenu.UseVisualStyleBackColor = false;
-            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // groupBox1
             // 
@@ -927,6 +905,7 @@ namespace baseCF
             this.textBox_nomeFantasia.Name = "textBox_nomeFantasia";
             this.textBox_nomeFantasia.Size = new System.Drawing.Size(667, 23);
             this.textBox_nomeFantasia.TabIndex = 4;
+            this.textBox_nomeFantasia.TextChanged += new System.EventHandler(this.textBox_nomeFantasia_TextChanged);
             // 
             // textBox1
             // 
@@ -964,18 +943,16 @@ namespace baseCF
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(18, 54);
+            this.dataGridView1.Location = new System.Drawing.Point(18, 58);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.Size = new System.Drawing.Size(970, 184);
+            this.dataGridView1.Size = new System.Drawing.Size(970, 180);
             this.dataGridView1.TabIndex = 16;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button2);
+            this.groupBox2.Controls.Add(this.button7);
             this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.textBox_buscaFornecedor);
             this.groupBox2.Controls.Add(this.dataGridView1);
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -985,93 +962,7 @@ namespace baseCF
             this.groupBox2.TabIndex = 16;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Buscar Fornecedores:";
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(901, 14);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(88, 38);
-            this.button2.TabIndex = 18;
-            this.button2.Text = "        Editar";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.SelecionarEdicao_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(807, 14);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 38);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "        Procurar";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.Consultar);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(12, 28);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(214, 13);
-            this.label9.TabIndex = 5;
-            this.label9.Text = "Digite o código ou nome do fornecedor:";
-            // 
-            // textBox_buscaFornecedor
-            // 
-            this.textBox_buscaFornecedor.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_buscaFornecedor.Location = new System.Drawing.Point(226, 24);
-            this.textBox_buscaFornecedor.Name = "textBox_buscaFornecedor";
-            this.textBox_buscaFornecedor.Size = new System.Drawing.Size(576, 23);
-            this.textBox_buscaFornecedor.TabIndex = 5;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.button6.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Segoe UI", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(9, 18);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(88, 37);
-            this.button6.TabIndex = 19;
-            this.button6.Text = "        Novo";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.button8.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Segoe UI", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.Location = new System.Drawing.Point(9, 106);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(88, 37);
-            this.button8.TabIndex = 19;
-            this.button8.Text = "        Excluir";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.Excluir_Click);
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // button7
             // 
@@ -1082,25 +973,79 @@ namespace baseCF
             this.button7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
             this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(9, 62);
+            this.button7.Location = new System.Drawing.Point(881, 14);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(88, 37);
+            this.button7.Size = new System.Drawing.Size(97, 38);
             this.button7.TabIndex = 20;
             this.button7.Text = "       Editar";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.SelecionarEdicao_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(765, 14);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(97, 38);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "        Procurar";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Consultar);
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.button6.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Segoe UI", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.Location = new System.Drawing.Point(6, 79);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(97, 38);
+            this.button6.TabIndex = 19;
+            this.button6.Text = "        Novo";
+            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.button8.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Segoe UI", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
+            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button8.Location = new System.Drawing.Point(6, 133);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(97, 38);
+            this.button8.TabIndex = 19;
+            this.button8.Text = "        Excluir";
+            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.Excluir_Click);
+            // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.button7);
             this.groupBox3.Controls.Add(this.button6);
             this.groupBox3.Controls.Add(this.button8);
+            this.groupBox3.Controls.Add(this.button4);
+            this.groupBox3.Controls.Add(this.button3);
             this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(1089, 362);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(102, 243);
+            this.groupBox3.Size = new System.Drawing.Size(109, 243);
             this.groupBox3.TabIndex = 19;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Controles";
@@ -1151,7 +1096,7 @@ namespace baseCF
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1208, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1260, 24);
             this.menuStrip1.TabIndex = 23;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -1187,15 +1132,12 @@ namespace baseCF
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1208, 661);
+            this.ClientSize = new System.Drawing.Size(1260, 670);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.btnMenu);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label3);
@@ -1206,8 +1148,8 @@ namespace baseCF
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.MaximumSize = new System.Drawing.Size(1278, 716);
-            this.MinimumSize = new System.Drawing.Size(1022, 630);
+            this.MaximumSize = new System.Drawing.Size(1276, 710);
+            this.MinimumSize = new System.Drawing.Size(911, 512);
             this.Name = "CadastroFornecedores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FAWS WMS - Consultar/Cadastrar Fornecedores";
@@ -1231,7 +1173,6 @@ namespace baseCF
             this.tabPage5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -1251,7 +1192,6 @@ namespace baseCF
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button btnMenu;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -1259,10 +1199,7 @@ namespace baseCF
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox_buscaFornecedor;
         private System.Windows.Forms.TextBox textBox_telefoneCelular;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox textBox_telefoneFixo;

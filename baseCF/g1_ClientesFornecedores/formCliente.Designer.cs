@@ -70,7 +70,6 @@ namespace baseCF
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.tmrDataHora = new System.Windows.Forms.Timer(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.ttpBuscar = new System.Windows.Forms.ToolTip(this.components);
@@ -101,7 +100,7 @@ namespace baseCF
             this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Name = "menu";
             this.menu.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menu.Size = new System.Drawing.Size(1264, 24);
+            this.menu.Size = new System.Drawing.Size(1223, 24);
             this.menu.TabIndex = 1;
             this.menu.Text = "menuStrip1";
             // 
@@ -261,7 +260,6 @@ namespace baseCF
             this.picBuscar.TabIndex = 26;
             this.picBuscar.TabStop = false;
             this.ttpBuscar.SetToolTip(this.picBuscar, "Pesquisa os clientes conforme parâmetros informados.");
-            this.picBuscar.Click += new System.EventHandler(this.picBuscar_Click);
             this.picBuscar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.picBuscar_MouseMove);
             // 
             // cboCidade
@@ -537,23 +535,6 @@ namespace baseCF
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Controles";
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.SystemColors.ButtonShadow;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(969, 629);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(88, 38);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "        Menu";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // tmrDataHora
             // 
             this.tmrDataHora.Enabled = true;
@@ -593,7 +574,7 @@ namespace baseCF
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.pictureBox4.Location = new System.Drawing.Point(-12, 617);
+            this.pictureBox4.Location = new System.Drawing.Point(-82, 623);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(1264, 59);
             this.pictureBox4.TabIndex = 12;
@@ -604,8 +585,7 @@ namespace baseCF
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1264, 679);
-            this.Controls.Add(this.button2);
+            this.ClientSize = new System.Drawing.Size(1223, 547);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -618,11 +598,12 @@ namespace baseCF
             this.Controls.Add(this.menu);
             this.Controls.Add(this.pictureBox4);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(1280, 718);
-            this.MinimumSize = new System.Drawing.Size(1022, 630);
+            this.MaximumSize = new System.Drawing.Size(1278, 712);
+            this.MinimumSize = new System.Drawing.Size(911, 512);
             this.Name = "formCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FAWS WMS - Consulta de Clientes";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.formCliente_Load);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.formCliente_MouseMove);
             this.menu.ResumeLayout(false);
@@ -676,7 +657,6 @@ namespace baseCF
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox txtNomeFantasia;
         private System.Windows.Forms.Label lblNomeFantasia;
         private System.Windows.Forms.RadioButton rbtnPJ;

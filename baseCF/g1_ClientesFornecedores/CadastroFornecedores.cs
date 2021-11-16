@@ -16,6 +16,7 @@ namespace baseCF
     public partial class CadastroFornecedores : Form
     {
         private int _idUpdate = 0;
+        Fill fill = new Fill();
 
         public CadastroFornecedores()
         {
@@ -24,17 +25,28 @@ namespace baseCF
 
         private void Consultar(object sender, EventArgs e)
         {
-            OleDbConnection con = new OleDbConnection(Globals.ConnString);
-            con.Open();
-            OleDbCommand cmd = con.CreateCommand();
-            cmd.CommandText = "Select * from g1_tblFornecedores";
-            cmd.Connection = con;
-            cmd.CommandType = CommandType.Text;
-            OleDbDataAdapter da = new OleDbDataAdapter(cmd);
-            DataTable tabelaFornecedores = new DataTable();
-            da.Fill(tabelaFornecedores);
-            dataGridView1.DataSource = tabelaFornecedores;
-            con.Close();
+            try
+            {
+                OleDbConnection con = new OleDbConnection(Globals.ConnString);
+                con.Open();
+
+                string SQL = "SELECT * FROM g1_tblFornecedores";
+
+                OleDbDataAdapter adapter = new OleDbDataAdapter(SQL, con);
+
+                DataSet DS = new DataSet();
+
+                adapter.Fill(DS, "g1_tblFornecedores");
+
+                dataGridView1.DataSource = DS.Tables["g1_tblFornecedores"];
+
+                con.Close();
+
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show(erro.Message);
+            }
         }
 
         private IEnumerable<SelectItem> ObterItensSelect(string tabela, string colunaDesc, string colunaId)
@@ -210,7 +222,7 @@ namespace baseCF
             cmd.ExecuteNonQuery();
 
             con.Close();
-            MessageBox.Show("Dados inseridos com sucesso");
+            MessageBox.Show("Dados inseridos com sucesso", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void Atualizar()
@@ -287,7 +299,7 @@ namespace baseCF
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao cadastrar, forneça mais informações e tente novamente. " + ex.Message);
+                MessageBox.Show("Erro ao cadastrar, forneça mais informações e tente novamente. " + ex.Message,"Erro",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
         }
 
@@ -314,35 +326,35 @@ namespace baseCF
 
         private void Excluir_Click(object sender, EventArgs e)
         {
-            //var selectedCells = this.dataGridView1.SelectedCells;
-            //if (selectedCells.Count == 0)
-            //{
-            //    MessageBox.Show("Uma linha deve ser selecionada.");
-            //    return;
-            //}
+            var selectedCells = this.dataGridView1.SelectedCells;
+            if (selectedCells.Count == 0)
+            {
+                MessageBox.Show("Uma linha deve ser selecionada.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
-            //OleDbConnection con = new OleDbConnection(Globals.ConnString);
-            //con.Open();
-            //OleDbCommand cmd = con.CreateCommand();
+            OleDbConnection con = new OleDbConnection(Globals.ConnString);
+            con.Open();
+            OleDbCommand cmd = con.CreateCommand();
 
-            //var selectedRowIndex = selectedCells[0].RowIndex;
-            //var rowData = this.dataGridView1.Rows[selectedRowIndex];
-            //var id = (int)rowData.Cells[0].Value;
-            //cmd.CommandText = "DELETE from g1_tblFornecedores WHERE idFornecedores = " + id;
-            //cmd.Connection = con;
-            //cmd.CommandType = CommandType.Text;
-            //int rowAffected = cmd.ExecuteNonQuery();
-            //if (rowAffected == 0)
-            //{
-            //    MessageBox.Show("Nenhuma linha encontrada.");
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Dados excluidos com sucesso");
-            //}
+            var selectedRowIndex = selectedCells[0].RowIndex;
+            var rowData = this.dataGridView1.Rows[selectedRowIndex];
+            var id = (int)rowData.Cells[0].Value;
+            cmd.CommandText = "DELETE from g1_tblFornecedores WHERE idFornecedores = " + id;
+            cmd.Connection = con;
+            cmd.CommandType = CommandType.Text;
+            int rowAffected = cmd.ExecuteNonQuery();
+            if (rowAffected == 0)
+            {
+                MessageBox.Show("Uma linha deve ser selecionada.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                MessageBox.Show("Dados excluidos com sucesso", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
 
-            //Consultar(null, null);
-            //con.Close();
+            Consultar(null, null);
+            con.Close();
         }
 
         private string TratarCampoVazio(object valor)
@@ -441,7 +453,7 @@ namespace baseCF
             textBox1.Text = "000";
             LimparCampos();
         }
-       
+
         private void tmrDataHora_Tick(object sender, EventArgs e)
         {
             label2.Text = DateTime.Now.ToString("dd/MM/yyyy, HH:mm");
@@ -452,10 +464,24 @@ namespace baseCF
             this.Close();
         }
 
-        private void btnMenu_Click(object sender, EventArgs e)
+        private void button6_Click(object sender, EventArgs e)
         {
-            UserI fechar = new UserI();
-            fechar.abrirFecharForm(this, formMenuCadastro.ActiveForm);
+            textBox_nomeFantasia.Focus();
+        }
+
+        private void textBox_nomeFantasia_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox_buscaFornecedor_TextChanged(object sender, EventArgs e)
+        {
+             
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
