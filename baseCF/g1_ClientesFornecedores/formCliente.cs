@@ -183,7 +183,6 @@ namespace baseCF
                 OleDbConnection con = new OleDbConnection(Globals.ConnString);
                 con.Open();
 
-
                 String SQL;
 
                 if (rbtnPF.Checked == true)
@@ -303,25 +302,32 @@ namespace baseCF
             }
         }
 
-        private void picBuscarClaro_Click(object sender, EventArgs e)
+        private void picBuscar_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void picBuscarClaro_Click(object sender, EventArgs e)
+        {
             dgnClientes.DataSource = null;
 
+            var resp = (mskCNPJ.MaskFull) | (mskCPF.MaskFull) | (txtNomeCliente.Text != "") | (txtNomeFantasia.Text != "");
 
-            Boolean resp = ((mskCNPJ.MaskFull) | (mskCPF.MaskFull) | (txtNomeCliente.Text != "") | (txtNomeFantasia.Text != ""));
-
-            if (resp == true)
+            if (resp)
             {
                 Consultar();
-            }
 
+                if (dgnClientes.Rows.Count == 1)
+                {
+                    MessageBox.Show("Nenhum fornecedor encontrado.");
+                }
+            }
             else
             {
                 MessageBox.Show("Favor preencher um parâmetro válido para realizar a pesquisa","Erro ao consultar",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
 
-
+           
         }
 
         private void picBuscar_MouseMove(object sender, MouseEventArgs e)
