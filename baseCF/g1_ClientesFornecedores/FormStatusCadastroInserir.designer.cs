@@ -259,7 +259,7 @@ namespace baseCF
             this.Status.Location = new System.Drawing.Point(136, 60);
             this.Status.Name = "Status";
             this.Status.Size = new System.Drawing.Size(216, 23);
-            this.Status.TabIndex = 10;
+            this.Status.TabIndex = 1;
             this.Status.TextChanged += new System.EventHandler(this.Status_TextChanged);
             // 
             // label14
@@ -282,7 +282,7 @@ namespace baseCF
             this.codigo.Name = "codigo";
             this.codigo.ReadOnly = true;
             this.codigo.Size = new System.Drawing.Size(86, 43);
-            this.codigo.TabIndex = 3;
+            this.codigo.TabIndex = 0;
             this.codigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label16
@@ -313,7 +313,7 @@ namespace baseCF
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(107, 38);
             this.btnAlterar.TabIndex = 20;
-            this.btnAlterar.Text = "        Salvar edição";
+            this.btnAlterar.Text = "        Alterar";
             this.btnAlterar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAlterar.UseVisualStyleBackColor = false;
             this.btnAlterar.Visible = false;

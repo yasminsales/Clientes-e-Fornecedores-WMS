@@ -257,7 +257,7 @@ namespace baseCF
             this.buscar.Location = new System.Drawing.Point(864, 63);
             this.buscar.Name = "buscar";
             this.buscar.Size = new System.Drawing.Size(116, 38);
-            this.buscar.TabIndex = 21;
+            this.buscar.TabIndex = 4;
             this.buscar.Text = "        Pesquisar";
             this.buscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buscar.UseVisualStyleBackColor = false;
@@ -269,7 +269,7 @@ namespace baseCF
             this.descricaoBanco.Location = new System.Drawing.Point(272, 79);
             this.descricaoBanco.Name = "descricaoBanco";
             this.descricaoBanco.Size = new System.Drawing.Size(199, 23);
-            this.descricaoBanco.TabIndex = 20;
+            this.descricaoBanco.TabIndex = 2;
             // 
             // label8
             // 
@@ -303,7 +303,7 @@ namespace baseCF
             this.visualizar.Location = new System.Drawing.Point(732, 63);
             this.visualizar.Name = "visualizar";
             this.visualizar.Size = new System.Drawing.Size(116, 38);
-            this.visualizar.TabIndex = 17;
+            this.visualizar.TabIndex = 3;
             this.visualizar.Text = "        Ver todos";
             this.visualizar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.visualizar.UseVisualStyleBackColor = false;
@@ -315,7 +315,7 @@ namespace baseCF
             this.codigoBanco.Location = new System.Drawing.Point(145, 79);
             this.codigoBanco.Name = "codigoBanco";
             this.codigoBanco.Size = new System.Drawing.Size(83, 23);
-            this.codigoBanco.TabIndex = 4;
+            this.codigoBanco.TabIndex = 1;
             this.codigoBanco.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // codigo
@@ -327,7 +327,7 @@ namespace baseCF
             this.codigo.Name = "codigo";
             this.codigo.ReadOnly = true;
             this.codigo.Size = new System.Drawing.Size(86, 43);
-            this.codigo.TabIndex = 3;
+            this.codigo.TabIndex = 0;
             this.codigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.codigo.TextChanged += new System.EventHandler(this.codigo_TextChanged);
             // 
@@ -405,7 +405,7 @@ namespace baseCF
             this.novocadastro.Location = new System.Drawing.Point(9, 18);
             this.novocadastro.Name = "novocadastro";
             this.novocadastro.Size = new System.Drawing.Size(88, 38);
-            this.novocadastro.TabIndex = 19;
+            this.novocadastro.TabIndex = 5;
             this.novocadastro.Text = "        Novo";
             this.novocadastro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.novocadastro.UseVisualStyleBackColor = false;
@@ -423,7 +423,7 @@ namespace baseCF
             this.excluircadastro.Location = new System.Drawing.Point(9, 106);
             this.excluircadastro.Name = "excluircadastro";
             this.excluircadastro.Size = new System.Drawing.Size(88, 38);
-            this.excluircadastro.TabIndex = 19;
+            this.excluircadastro.TabIndex = 7;
             this.excluircadastro.Text = "       Excluir";
             this.excluircadastro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.excluircadastro.UseVisualStyleBackColor = false;
@@ -441,7 +441,7 @@ namespace baseCF
             this.editarcadastro.Location = new System.Drawing.Point(9, 62);
             this.editarcadastro.Name = "editarcadastro";
             this.editarcadastro.Size = new System.Drawing.Size(88, 38);
-            this.editarcadastro.TabIndex = 20;
+            this.editarcadastro.TabIndex = 6;
             this.editarcadastro.Text = "        Editar";
             this.editarcadastro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.editarcadastro.UseVisualStyleBackColor = false;

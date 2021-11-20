@@ -223,7 +223,7 @@ namespace baseCF
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.ReadOnly = true;
             this.txtCodigo.Size = new System.Drawing.Size(86, 43);
-            this.txtCodigo.TabIndex = 3;
+            this.txtCodigo.TabIndex = 0;
             this.txtCodigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label6
@@ -248,7 +248,7 @@ namespace baseCF
             this.btnSalvar.Location = new System.Drawing.Point(9, 18);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(88, 38);
-            this.btnSalvar.TabIndex = 4;
+            this.btnSalvar.TabIndex = 3;
             this.btnSalvar.Text = "        Salvar";
             this.btnSalvar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSalvar.UseVisualStyleBackColor = false;
@@ -319,7 +319,7 @@ namespace baseCF
             this.mkdSiglaEstado.Mask = "LL";
             this.mkdSiglaEstado.Name = "mkdSiglaEstado";
             this.mkdSiglaEstado.Size = new System.Drawing.Size(46, 23);
-            this.mkdSiglaEstado.TabIndex = 31;
+            this.mkdSiglaEstado.TabIndex = 2;
             // 
             // txtdescEstado
             // 
