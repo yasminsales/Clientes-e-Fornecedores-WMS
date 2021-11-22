@@ -226,7 +226,7 @@ namespace baseCF
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.ReadOnly = true;
             this.txtCodigo.Size = new System.Drawing.Size(86, 43);
-            this.txtCodigo.TabIndex = 3;
+            this.txtCodigo.TabIndex = 0;
             this.txtCodigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label6
@@ -291,7 +291,7 @@ namespace baseCF
             // 
             this.tabIdenTributo2.Controls.Add(this.tabIdentTributo);
             this.tabIdenTributo2.Location = new System.Drawing.Point(11, 140);
-            this.tabIdenTributo2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabIdenTributo2.Margin = new System.Windows.Forms.Padding(2);
             this.tabIdenTributo2.Name = "tabIdenTributo2";
             this.tabIdenTributo2.SelectedIndex = 0;
             this.tabIdenTributo2.Size = new System.Drawing.Size(886, 219);
@@ -308,9 +308,9 @@ namespace baseCF
             this.tabIdentTributo.Controls.Add(this.label6);
             this.tabIdentTributo.Controls.Add(this.txtCodigo);
             this.tabIdentTributo.Location = new System.Drawing.Point(4, 22);
-            this.tabIdentTributo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabIdentTributo.Margin = new System.Windows.Forms.Padding(2);
             this.tabIdentTributo.Name = "tabIdentTributo";
-            this.tabIdentTributo.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabIdentTributo.Padding = new System.Windows.Forms.Padding(2);
             this.tabIdentTributo.Size = new System.Drawing.Size(878, 193);
             this.tabIdentTributo.TabIndex = 0;
             this.tabIdentTributo.Text = "Identificação do Tributo";

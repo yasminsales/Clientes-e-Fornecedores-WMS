@@ -223,7 +223,7 @@ namespace baseCF
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.ReadOnly = true;
             this.txtCodigo.Size = new System.Drawing.Size(86, 43);
-            this.txtCodigo.TabIndex = 3;
+            this.txtCodigo.TabIndex = 0;
             this.txtCodigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label6
@@ -248,7 +248,7 @@ namespace baseCF
             this.btnSalvar.Location = new System.Drawing.Point(10, 22);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(88, 38);
-            this.btnSalvar.TabIndex = 4;
+            this.btnSalvar.TabIndex = 3;
             this.btnSalvar.Text = "        Salvar";
             this.btnSalvar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSalvar.UseVisualStyleBackColor = false;
@@ -278,7 +278,7 @@ namespace baseCF
             this.btnFechar.Location = new System.Drawing.Point(782, 541);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(88, 38);
-            this.btnFechar.TabIndex = 5;
+            this.btnFechar.TabIndex = 4;
             this.btnFechar.Text = "        Fechar";
             this.btnFechar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFechar.UseVisualStyleBackColor = false;
@@ -319,7 +319,7 @@ namespace baseCF
             this.cboEstado.Margin = new System.Windows.Forms.Padding(2);
             this.cboEstado.Name = "cboEstado";
             this.cboEstado.Size = new System.Drawing.Size(92, 23);
-            this.cboEstado.TabIndex = 31;
+            this.cboEstado.TabIndex = 1;
             // 
             // txtdescCidade
             // 
@@ -327,7 +327,7 @@ namespace baseCF
             this.txtdescCidade.Location = new System.Drawing.Point(151, 108);
             this.txtdescCidade.Name = "txtdescCidade";
             this.txtdescCidade.Size = new System.Drawing.Size(373, 23);
-            this.txtdescCidade.TabIndex = 1;
+            this.txtdescCidade.TabIndex = 2;
             // 
             // label7
             // 

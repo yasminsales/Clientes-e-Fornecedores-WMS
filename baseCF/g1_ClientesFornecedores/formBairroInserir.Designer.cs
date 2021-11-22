@@ -223,7 +223,7 @@ namespace baseCF
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.ReadOnly = true;
             this.txtCodigo.Size = new System.Drawing.Size(86, 43);
-            this.txtCodigo.TabIndex = 3;
+            this.txtCodigo.TabIndex = 0;
             this.txtCodigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label6
@@ -319,7 +319,7 @@ namespace baseCF
             this.cboCidade.Margin = new System.Windows.Forms.Padding(2);
             this.cboCidade.Name = "cboCidade";
             this.cboCidade.Size = new System.Drawing.Size(92, 23);
-            this.cboCidade.TabIndex = 31;
+            this.cboCidade.TabIndex = 1;
             // 
             // txtdescBairro
             // 
@@ -327,7 +327,7 @@ namespace baseCF
             this.txtdescBairro.Location = new System.Drawing.Point(151, 108);
             this.txtdescBairro.Name = "txtdescBairro";
             this.txtdescBairro.Size = new System.Drawing.Size(373, 23);
-            this.txtdescBairro.TabIndex = 1;
+            this.txtdescBairro.TabIndex = 2;
             // 
             // label7
             // 

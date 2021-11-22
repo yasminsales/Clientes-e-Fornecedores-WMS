@@ -244,7 +244,7 @@ namespace baseCF
             this.button5.Location = new System.Drawing.Point(907, 636);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(88, 38);
-            this.button5.TabIndex = 1;
+            this.button5.TabIndex = 7;
             this.button5.Text = "        Menu";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button5.UseVisualStyleBackColor = false;
@@ -279,7 +279,7 @@ namespace baseCF
             this.buscar.Location = new System.Drawing.Point(894, 89);
             this.buscar.Name = "buscar";
             this.buscar.Size = new System.Drawing.Size(88, 38);
-            this.buscar.TabIndex = 18;
+            this.buscar.TabIndex = 3;
             this.buscar.Text = "        Procurar";
             this.buscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buscar.UseVisualStyleBackColor = false;
@@ -297,7 +297,7 @@ namespace baseCF
             this.button1.Location = new System.Drawing.Point(782, 89);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(104, 38);
-            this.button1.TabIndex = 17;
+            this.button1.TabIndex = 2;
             this.button1.Text = "        Ver todos";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = false;
@@ -309,7 +309,7 @@ namespace baseCF
             this.status.Location = new System.Drawing.Point(189, 79);
             this.status.Name = "status";
             this.status.Size = new System.Drawing.Size(351, 23);
-            this.status.TabIndex = 4;
+            this.status.TabIndex = 1;
             this.status.TextChanged += new System.EventHandler(this.status_TextChanged);
             // 
             // codigo
@@ -321,7 +321,7 @@ namespace baseCF
             this.codigo.Name = "codigo";
             this.codigo.ReadOnly = true;
             this.codigo.Size = new System.Drawing.Size(86, 43);
-            this.codigo.TabIndex = 3;
+            this.codigo.TabIndex = 0;
             this.codigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label8
@@ -399,7 +399,7 @@ namespace baseCF
             this.button6.Location = new System.Drawing.Point(9, 18);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(88, 38);
-            this.button6.TabIndex = 19;
+            this.button6.TabIndex = 4;
             this.button6.Text = "        Novo";
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button6.UseVisualStyleBackColor = false;
@@ -417,7 +417,7 @@ namespace baseCF
             this.button8.Location = new System.Drawing.Point(9, 106);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(88, 38);
-            this.button8.TabIndex = 19;
+            this.button8.TabIndex = 6;
             this.button8.Text = "        Excluir";
             this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button8.UseVisualStyleBackColor = false;
@@ -435,7 +435,7 @@ namespace baseCF
             this.button7.Location = new System.Drawing.Point(9, 62);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(88, 38);
-            this.button7.TabIndex = 20;
+            this.button7.TabIndex = 5;
             this.button7.Text = "        Editar";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button7.UseVisualStyleBackColor = false;

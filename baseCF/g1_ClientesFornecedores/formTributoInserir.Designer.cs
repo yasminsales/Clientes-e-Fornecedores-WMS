@@ -114,18 +114,18 @@ namespace baseCF
             // optionToolStripMenuItem
             // 
             this.optionToolStripMenuItem.Name = "optionToolStripMenuItem";
-            this.optionToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.optionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.optionToolStripMenuItem.Text = "Sair";
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(135, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
             // 
             // preferênciasToolStripMenuItem
             // 
             this.preferênciasToolStripMenuItem.Name = "preferênciasToolStripMenuItem";
-            this.preferênciasToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.preferênciasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.preferênciasToolStripMenuItem.Text = "Preferências";
             // 
             // editarToolStripMenuItem
@@ -228,7 +228,7 @@ namespace baseCF
             this.txtIdTributo.Name = "txtIdTributo";
             this.txtIdTributo.ReadOnly = true;
             this.txtIdTributo.Size = new System.Drawing.Size(86, 43);
-            this.txtIdTributo.TabIndex = 3;
+            this.txtIdTributo.TabIndex = 0;
             this.txtIdTributo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label6
@@ -253,7 +253,7 @@ namespace baseCF
             this.btnSalvar.Location = new System.Drawing.Point(9, 18);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(88, 38);
-            this.btnSalvar.TabIndex = 19;
+            this.btnSalvar.TabIndex = 6;
             this.btnSalvar.Text = "        Salvar";
             this.btnSalvar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSalvar.UseVisualStyleBackColor = false;
@@ -283,7 +283,7 @@ namespace baseCF
             this.btnDesfazer.Location = new System.Drawing.Point(879, 575);
             this.btnDesfazer.Name = "btnDesfazer";
             this.btnDesfazer.Size = new System.Drawing.Size(88, 38);
-            this.btnDesfazer.TabIndex = 21;
+            this.btnDesfazer.TabIndex = 7;
             this.btnDesfazer.Text = "        Fechar";
             this.btnDesfazer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDesfazer.UseVisualStyleBackColor = false;
@@ -293,7 +293,7 @@ namespace baseCF
             // 
             this.tabIdentTributo.Controls.Add(this.tabIdentTributo1);
             this.tabIdentTributo.Location = new System.Drawing.Point(9, 150);
-            this.tabIdentTributo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabIdentTributo.Margin = new System.Windows.Forms.Padding(2);
             this.tabIdentTributo.Name = "tabIdentTributo";
             this.tabIdentTributo.SelectedIndex = 0;
             this.tabIdentTributo.Size = new System.Drawing.Size(962, 373);
@@ -313,9 +313,9 @@ namespace baseCF
             this.tabIdentTributo1.Controls.Add(this.label6);
             this.tabIdentTributo1.Controls.Add(this.txtIdTributo);
             this.tabIdentTributo1.Location = new System.Drawing.Point(4, 22);
-            this.tabIdentTributo1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabIdentTributo1.Margin = new System.Windows.Forms.Padding(2);
             this.tabIdentTributo1.Name = "tabIdentTributo1";
-            this.tabIdentTributo1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabIdentTributo1.Padding = new System.Windows.Forms.Padding(2);
             this.tabIdentTributo1.Size = new System.Drawing.Size(954, 347);
             this.tabIdentTributo1.TabIndex = 0;
             this.tabIdentTributo1.Text = "Identificação do Tributo";
@@ -335,20 +335,20 @@ namespace baseCF
             // 
             this.chkVigente.AutoSize = true;
             this.chkVigente.Location = new System.Drawing.Point(646, 110);
-            this.chkVigente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chkVigente.Margin = new System.Windows.Forms.Padding(2);
             this.chkVigente.Name = "chkVigente";
             this.chkVigente.Size = new System.Drawing.Size(15, 14);
-            this.chkVigente.TabIndex = 38;
+            this.chkVigente.TabIndex = 4;
             this.chkVigente.UseVisualStyleBackColor = true;
             // 
             // flagEditar
             // 
             this.flagEditar.AutoSize = true;
             this.flagEditar.Location = new System.Drawing.Point(323, 26);
-            this.flagEditar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flagEditar.Margin = new System.Windows.Forms.Padding(2);
             this.flagEditar.Name = "flagEditar";
             this.flagEditar.Size = new System.Drawing.Size(142, 17);
-            this.flagEditar.TabIndex = 37;
+            this.flagEditar.TabIndex = 5;
             this.flagEditar.Text = "FlagControleEditarSalvar";
             this.flagEditar.UseVisualStyleBackColor = true;
             this.flagEditar.Visible = false;
@@ -358,10 +358,10 @@ namespace baseCF
             this.cboTipoTributo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboTipoTributo.FormattingEnabled = true;
             this.cboTipoTributo.Location = new System.Drawing.Point(205, 107);
-            this.cboTipoTributo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboTipoTributo.Margin = new System.Windows.Forms.Padding(2);
             this.cboTipoTributo.Name = "cboTipoTributo";
             this.cboTipoTributo.Size = new System.Drawing.Size(179, 21);
-            this.cboTipoTributo.TabIndex = 36;
+            this.cboTipoTributo.TabIndex = 2;
             // 
             // label8
             // 
@@ -378,10 +378,10 @@ namespace baseCF
             this.cboCidade.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCidade.FormattingEnabled = true;
             this.cboCidade.Location = new System.Drawing.Point(12, 107);
-            this.cboCidade.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboCidade.Margin = new System.Windows.Forms.Padding(2);
             this.cboCidade.Name = "cboCidade";
             this.cboCidade.Size = new System.Drawing.Size(179, 21);
-            this.cboCidade.TabIndex = 34;
+            this.cboCidade.TabIndex = 1;
             // 
             // txtAliquota
             // 
@@ -389,7 +389,7 @@ namespace baseCF
             this.txtAliquota.Location = new System.Drawing.Point(401, 107);
             this.txtAliquota.Name = "txtAliquota";
             this.txtAliquota.Size = new System.Drawing.Size(217, 23);
-            this.txtAliquota.TabIndex = 33;
+            this.txtAliquota.TabIndex = 3;
             // 
             // label11
             // 
