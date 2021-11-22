@@ -508,7 +508,6 @@ namespace baseCF
         private void comboBox_estado_SelectedIndexChanged(object sender, EventArgs e)
         {
             fill.fillCidade(comboBox_estado, comboBox_cidade);
-            MessageBox.Show(comboBox_estado.SelectedIndex.ToString());
         }
     }
 }

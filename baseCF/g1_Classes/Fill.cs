@@ -41,7 +41,7 @@ namespace baseCF
                 cidade.DataSource = (dt);
                 //cboTipoTributo.Items.Clear();
                 cidade.DisplayMember = "descCidade";
-               cidade.ValueMember = "idCidade";
+                cidade.ValueMember = "idCidade";
             }
             catch (Exception erro)
             {
@@ -83,15 +83,14 @@ namespace baseCF
             }
         }
 
-        public void fillCidade(ComboBox estado,ComboBox cidade)
+        public void fillCidade(ComboBox estado, ComboBox cidade)
         {
             try
             {
                 OleDbConnection con = new OleDbConnection(Globals.ConnString);
                 con.Open();
 
-                String SQL;
-                SQL = "SELECT * FROM g1_tblCidade WHERE g1_tblCidade.idEstado="+estado.SelectedValue;
+                var SQL = "SELECT * FROM g1_tblCidade WHERE g1_tblCidade.idEstado=" + ((SelectItem)estado.SelectedItem).Id;
 
                 OleDbCommand cmd = new OleDbCommand(SQL, con);
                 cmd.Connection = con;
@@ -151,7 +150,7 @@ namespace baseCF
             }
         }
 
-        public void fillBairro(ComboBox bairro) 
+        public void fillBairro(ComboBox bairro)
         {
             try
             {
