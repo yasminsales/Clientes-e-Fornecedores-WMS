@@ -316,7 +316,7 @@ namespace baseCF
             this.idBanco.Name = "idBanco";
             this.idBanco.ReadOnly = true;
             this.idBanco.Size = new System.Drawing.Size(86, 43);
-            this.idBanco.TabIndex = 3;
+            this.idBanco.TabIndex = 0;
             this.idBanco.TabStop = false;
             this.idBanco.Text = "000";
             this.idBanco.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -352,7 +352,7 @@ namespace baseCF
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(107, 38);
             this.btnAlterar.TabIndex = 3;
-            this.btnAlterar.Text = "        Salvar edição";
+            this.btnAlterar.Text = "       Salvar edição";
             this.btnAlterar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAlterar.UseVisualStyleBackColor = false;
             this.btnAlterar.Visible = false;
@@ -362,9 +362,9 @@ namespace baseCF
             // 
             this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(990, 237);
+            this.groupBox3.Location = new System.Drawing.Point(990, 230);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(134, 176);
+            this.groupBox3.Size = new System.Drawing.Size(134, 183);
             this.groupBox3.TabIndex = 20;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Controles";

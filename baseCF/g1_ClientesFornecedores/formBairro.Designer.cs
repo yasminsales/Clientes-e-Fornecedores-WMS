@@ -232,7 +232,7 @@ namespace baseCF
             this.button5.Location = new System.Drawing.Point(990, 629);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(88, 38);
-            this.button5.TabIndex = 1;
+            this.button5.TabIndex = 8;
             this.button5.Text = "      Menu";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
@@ -263,7 +263,7 @@ namespace baseCF
             this.cboBairro.Margin = new System.Windows.Forms.Padding(2);
             this.cboBairro.Name = "cboBairro";
             this.cboBairro.Size = new System.Drawing.Size(361, 23);
-            this.cboBairro.TabIndex = 20;
+            this.cboBairro.TabIndex = 2;
             this.cboBairro.SelectionChangeCommitted += new System.EventHandler(this.cboCidade_SelectionChangeCommitted);
             // 
             // lblEstado
@@ -283,7 +283,7 @@ namespace baseCF
             this.cboCidade.Margin = new System.Windows.Forms.Padding(2);
             this.cboCidade.Name = "cboCidade";
             this.cboCidade.Size = new System.Drawing.Size(221, 23);
-            this.cboCidade.TabIndex = 18;
+            this.cboCidade.TabIndex = 1;
             this.cboCidade.SelectionChangeCommitted += new System.EventHandler(this.cboCidade_SelectionChangeCommitted_1);
             // 
             // button1
@@ -296,7 +296,7 @@ namespace baseCF
             this.button1.Location = new System.Drawing.Point(923, 145);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(66, 25);
-            this.button1.TabIndex = 17;
+            this.button1.TabIndex = 4;
             this.button1.Text = "Buscar";
             this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button1.UseVisualStyleBackColor = false;
@@ -348,7 +348,7 @@ namespace baseCF
             this.dgCnsTipoTributo.RowHeadersWidth = 51;
             this.dgCnsTipoTributo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgCnsTipoTributo.Size = new System.Drawing.Size(956, 220);
-            this.dgCnsTipoTributo.TabIndex = 0;
+            this.dgCnsTipoTributo.TabIndex = 3;
             this.dgCnsTipoTributo.TabStop = false;
             // 
             // groupBox2
@@ -376,7 +376,7 @@ namespace baseCF
             this.btnNovo.Location = new System.Drawing.Point(9, 18);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(88, 38);
-            this.btnNovo.TabIndex = 2;
+            this.btnNovo.TabIndex = 5;
             this.btnNovo.Text = "        Novo";
             this.btnNovo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNovo.UseVisualStyleBackColor = false;
@@ -412,7 +412,7 @@ namespace baseCF
             this.btnEditar.Location = new System.Drawing.Point(9, 62);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(88, 38);
-            this.btnEditar.TabIndex = 3;
+            this.btnEditar.TabIndex = 7;
             this.btnEditar.Text = "        Editar";
             this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEditar.UseVisualStyleBackColor = false;

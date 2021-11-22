@@ -524,6 +524,7 @@ namespace baseCF
             this.comboBox_estado.Size = new System.Drawing.Size(121, 33);
             this.comboBox_estado.TabIndex = 31;
             this.comboBox_estado.ValueMember = "Id";
+            this.comboBox_estado.SelectedIndexChanged += new System.EventHandler(this.comboBox_estado_SelectedIndexChanged);
             // 
             // Estado
             // 
@@ -1073,7 +1074,6 @@ namespace baseCF
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Segoe UI", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
             this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button7.Location = new System.Drawing.Point(14, 95);
             this.button7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);

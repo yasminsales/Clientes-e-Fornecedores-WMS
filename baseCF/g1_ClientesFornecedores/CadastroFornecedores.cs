@@ -324,9 +324,11 @@ namespace baseCF
 
         private void PreencherSelects()
         {
-            comboBox_bairro.Items.AddRange(ObterItensSelect("g1_tblBairro", "descBairro", "idBairro").ToArray());
+            //TO-DO: Ao mudar a indexação do banco de dados e deixa-los em ordem,mudar elementos na classe Fill adicionando SelectedIndexhanged
+
+            //comboBox_bairro.Items.AddRange(ObterItensSelect("g1_tblBairro", "descBairro", "idBairro").ToArray());
             comboBox_banco.Items.AddRange(ObterItensSelect("g1_tblBanco", "codBanco", "idBanco").ToArray());
-            comboBox_cidade.Items.AddRange(ObterItensSelect("g1_tblCidade", "descCidade", "idCidade").ToArray());
+            //comboBox_cidade.Items.AddRange(ObterItensSelect("g1_tblCidade", "descCidade", "idCidade").ToArray());
             comboBox_estado.Items.AddRange(ObterItensSelect("g1_tblEstado", "siglaEstado", "idEstado").ToArray());
             //comboBox_regimetTributacao.Items.AddRange(ObterItensSelect("g1_tblBairro", "descBairro", "idBairro").ToArray());
             comboBox_segmento.Items.AddRange(ObterItensSelect("g1_tblSegmento", "descSegmento", "idSegmento").ToArray());
@@ -501,6 +503,12 @@ namespace baseCF
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
+        }
+
+        private void comboBox_estado_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            fill.fillCidade(comboBox_estado, comboBox_cidade);
+            MessageBox.Show(comboBox_estado.SelectedIndex.ToString());
         }
     }
 }

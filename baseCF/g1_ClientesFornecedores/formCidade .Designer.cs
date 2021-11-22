@@ -34,14 +34,14 @@ namespace baseCF
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menu = new System.Windows.Forms.MenuStrip();
             this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.optionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
-            this.preferênciasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.optionToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.permissõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exibirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.optionToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.optionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
+            this.preferênciasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.lblDataHora = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -99,24 +99,11 @@ namespace baseCF
             this.menu.Size = new System.Drawing.Size(1250, 24);
             this.menu.TabIndex = 1;
             this.menu.Text = "menuStrip1";
-          
             // 
-            // optionToolStripMenuItem
+            // arquivoToolStripMenuItem
             // 
-            this.optionToolStripMenuItem.Name = "optionToolStripMenuItem";
-            this.optionToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
-            this.optionToolStripMenuItem.Text = "Sair";
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(135, 6);
-            // 
-            // preferênciasToolStripMenuItem
-            // 
-            this.preferênciasToolStripMenuItem.Name = "preferênciasToolStripMenuItem";
-            this.preferênciasToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
-            this.preferênciasToolStripMenuItem.Text = "Preferências";
+            this.arquivoToolStripMenuItem.Name = "arquivoToolStripMenuItem";
+            this.arquivoToolStripMenuItem.Size = new System.Drawing.Size(12, 20);
             // 
             // editarToolStripMenuItem
             // 
@@ -154,6 +141,30 @@ namespace baseCF
             this.optionToolStripMenuItem2.Name = "optionToolStripMenuItem2";
             this.optionToolStripMenuItem2.Size = new System.Drawing.Size(115, 22);
             this.optionToolStripMenuItem2.Text = "Suporte";
+            // 
+            // optionToolStripMenuItem
+            // 
+            this.optionToolStripMenuItem.Name = "optionToolStripMenuItem";
+            this.optionToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.optionToolStripMenuItem.Text = "Sair";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(135, 6);
+            // 
+            // preferênciasToolStripMenuItem
+            // 
+            this.preferênciasToolStripMenuItem.Name = "preferênciasToolStripMenuItem";
+            this.preferênciasToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.preferênciasToolStripMenuItem.Text = "Preferências";
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 23);
+            this.label1.TabIndex = 22;
             // 
             // lblDataHora
             // 
@@ -209,7 +220,7 @@ namespace baseCF
             this.button5.Location = new System.Drawing.Point(990, 629);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(88, 38);
-            this.button5.TabIndex = 1;
+            this.button5.TabIndex = 7;
             this.button5.Text = "      Menu";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
@@ -240,7 +251,7 @@ namespace baseCF
             this.cboCidade.Margin = new System.Windows.Forms.Padding(2);
             this.cboCidade.Name = "cboCidade";
             this.cboCidade.Size = new System.Drawing.Size(361, 23);
-            this.cboCidade.TabIndex = 20;
+            this.cboCidade.TabIndex = 2;
             this.cboCidade.SelectionChangeCommitted += new System.EventHandler(this.cboCidade_SelectionChangeCommitted);
             // 
             // lblEstado
@@ -260,7 +271,7 @@ namespace baseCF
             this.cboEstado.Margin = new System.Windows.Forms.Padding(2);
             this.cboEstado.Name = "cboEstado";
             this.cboEstado.Size = new System.Drawing.Size(62, 23);
-            this.cboEstado.TabIndex = 18;
+            this.cboEstado.TabIndex = 1;
             this.cboEstado.SelectionChangeCommitted += new System.EventHandler(this.cboEstado_SelectionChangeCommitted);
             // 
             // button1
@@ -273,7 +284,7 @@ namespace baseCF
             this.button1.Location = new System.Drawing.Point(923, 145);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(66, 25);
-            this.button1.TabIndex = 17;
+            this.button1.TabIndex = 3;
             this.button1.Text = "Buscar";
             this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button1.UseVisualStyleBackColor = false;
@@ -352,7 +363,7 @@ namespace baseCF
             this.btnNovo.Location = new System.Drawing.Point(11, 26);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(88, 38);
-            this.btnNovo.TabIndex = 2;
+            this.btnNovo.TabIndex = 4;
             this.btnNovo.Text = "        Novo";
             this.btnNovo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNovo.UseVisualStyleBackColor = false;
@@ -370,7 +381,7 @@ namespace baseCF
             this.btnExcluir.Location = new System.Drawing.Point(11, 114);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(88, 38);
-            this.btnExcluir.TabIndex = 4;
+            this.btnExcluir.TabIndex = 6;
             this.btnExcluir.Text = "        Excluir";
             this.btnExcluir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnExcluir.UseVisualStyleBackColor = false;
@@ -388,7 +399,7 @@ namespace baseCF
             this.btnEditar.Location = new System.Drawing.Point(11, 70);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(88, 38);
-            this.btnEditar.TabIndex = 3;
+            this.btnEditar.TabIndex = 5;
             this.btnEditar.Text = "        Editar";
             this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEditar.UseVisualStyleBackColor = false;

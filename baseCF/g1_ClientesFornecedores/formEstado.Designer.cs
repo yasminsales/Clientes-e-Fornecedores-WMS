@@ -272,7 +272,7 @@ namespace baseCF
             this.button1.Location = new System.Drawing.Point(923, 145);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(66, 25);
-            this.button1.TabIndex = 17;
+            this.button1.TabIndex = 2;
             this.button1.Text = "Buscar";
             this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button1.UseVisualStyleBackColor = false;
@@ -352,7 +352,7 @@ namespace baseCF
             this.btnNovo.Location = new System.Drawing.Point(9, 18);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(88, 38);
-            this.btnNovo.TabIndex = 2;
+            this.btnNovo.TabIndex = 3;
             this.btnNovo.Text = "        Novo";
             this.btnNovo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNovo.UseVisualStyleBackColor = false;
@@ -370,7 +370,7 @@ namespace baseCF
             this.btnExcluir.Location = new System.Drawing.Point(9, 106);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(88, 38);
-            this.btnExcluir.TabIndex = 4;
+            this.btnExcluir.TabIndex = 5;
             this.btnExcluir.Text = "        Excluir";
             this.btnExcluir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnExcluir.UseVisualStyleBackColor = false;
@@ -388,7 +388,7 @@ namespace baseCF
             this.btnEditar.Location = new System.Drawing.Point(9, 62);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(88, 38);
-            this.btnEditar.TabIndex = 3;
+            this.btnEditar.TabIndex = 4;
             this.btnEditar.Text = "        Editar";
             this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEditar.UseVisualStyleBackColor = false;
